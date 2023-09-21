@@ -6,12 +6,14 @@ Install all the packages using `npm install` using the following command:
 
 ```bash
 npm install package.json
+```
 
 Configuration
 Create a config.js file which will have all the database and atreemo credentials and save it under the atreemo directory. Replace the placeholder values in the config.js file with your actual database and access token credentials.
 
 Sample config.js File
 
+```bash
 // Database configuration
 const databaseConfig = {
   host: "127.0.0.1",
@@ -34,11 +36,15 @@ module.exports = {
   accessTokenConfig,
 };
 
+```
+
 Usage
 Run the main.js file using the following command:
 
+```bash
 node main.js
+```
 
-
+```
 
 ```
