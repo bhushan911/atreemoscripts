@@ -44,7 +44,3 @@ Run the main.js file using the following command:
 ```bash
 node main.js
 ```
-
-```
-
-```
