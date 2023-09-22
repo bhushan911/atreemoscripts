@@ -10,7 +10,7 @@ async function post(BearerToken, tableNames) {
   for (const tableName of tableNames) {
     const requestData = {
       TableName: tableName,
-      StartDate: "2018-01-01T11:45:37.3794767+01:00", // Modify the start date as needed
+      StartDate: "2023-09-01T11:45:37.3794767+01:00", // Modify the start date as needed
     };
 
     const headers = {

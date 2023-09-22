@@ -1,5 +1,6 @@
 const axios = require("axios");
 const mysql = require("mysql2");
+const queries = require('./queries');
 const { databaseConfig } = require("./config.js");
 const qs = require("querystring");
 const { logToFile } = require("./log.js");
@@ -12,7 +13,7 @@ const {
   getEmailTrendFact,
   getLoyaltyPointsFact,
   getVisitsFact,
-} = require("./test_script.js");
+} = require("./test_script_copy.js");
 const { post } = require("./post.js");
 const { accessTokenConfig } = require("./config.js");
 
@@ -62,6 +63,7 @@ const getAccessToken = async () => {
   }
 };
 
+
 // Call the functions to fetch and save data from all API endpoints
 async function fetchAndSaveDataFromAllEndpoints() {
   let connection;
@@ -71,16 +73,16 @@ async function fetchAndSaveDataFromAllEndpoints() {
 
     // Connect to the database
     await connection.promise().connect();
+    console.log("DB Connection Open:");
 
-
-    await getBookingsFact(BearerToken,connection);
-    await getContactDetailsFact(BearerToken,connection);
-    await getTransactionsFact(BearerToken,connection);
-    await getContactPreferencesFact(BearerToken,connection);
-    await getContactSourcesFact(BearerToken,connection);
-    await getEmailTrendFact(BearerToken,connection);
-    await getLoyaltyPointsFact(BearerToken,connection);
-    await getVisitsFact(BearerToken,connection);
+    await getBookingsFact(BearerToken,connection,'insertBookingsFact');
+    await getContactDetailsFact(BearerToken,connection,'insertContactDetailsFact');
+    await getTransactionsFact(BearerToken,connection,'insertTransactionsFact');
+    await getContactPreferencesFact(BearerToken,connection,'insertContactPreferencesFact');
+    await getContactSourcesFact(BearerToken,connection,'insertContactSourcesFact');
+    await getEmailTrendFact(BearerToken,connection,'insertEmailTrendFact');
+    await getLoyaltyPointsFact(BearerToken,connection,'insertLoyaltyPointsFact');
+    await getVisitsFact(BearerToken,connection,'insertVisitsFact');
 
     // Call other functions for remaining endpoints
     console.log("Data from all API endpoints has been saved to the database.");
