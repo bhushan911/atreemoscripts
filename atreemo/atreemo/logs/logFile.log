@@ -309,3 +309,318 @@
 2023-09-15T12:28:01.282Z: No more data retrieved from the GetVisitsFact API.
 2023-09-15T12:28:01.283Z: Data from all API endpoints has been saved to the database.
 2023-09-15T12:28:01.283Z: Script finished
+09/25/2023, 03:53:50 PM: Script finished
+09/25/2023, 03:53:50 PM: Script started
+09/25/2023, 03:53:50 PM: BearerToken Created: CDRNh68SQ0dKARz5-QNs3ieI7GN10IW-g4pRvkOIDFdTM9tISFIUqraqNaSpDnXtEtE4KBdMiw1BbgiipTrKtcUfNACK_xiKpKlF7wIBtoghi8hBxzo7qpPEPh8bq8UH4M5Us6LCthNHkBZyQ5WrDHBsWE5labOQDCcn532SaFnQotyoIMuGw2VN6imhzBhipVaDynch3gg9omrXyNZlAONSz1sUbqxxC6cxvXQ2W4nlkKgljdPIkT7faKsChnItL2IKc3sIB488hUrXITvrIFqr8a8gcxIzAqd3UrezK3RsyUultZIsCjd6fDKnw-hFMG2G7OXRE7iHdtx86pBYaTkWGpQ
+09/25/2023, 03:53:50 PM: Data for table 'BookingsFact' has been posted.
+09/25/2023, 03:53:50 PM: Response Data : [object Object]
+09/25/2023, 03:53:50 PM: Data for table 'ContactDetailsFact' has been posted.
+09/25/2023, 03:53:50 PM: Response Data : [object Object]
+09/25/2023, 03:53:51 PM: Data for table 'TransactionsFact' has been posted.
+09/25/2023, 03:53:51 PM: Response Data : [object Object]
+09/25/2023, 03:53:51 PM: Data for table 'ContactPreferencesFact' has been posted.
+09/25/2023, 03:53:51 PM: Response Data : [object Object]
+09/25/2023, 03:53:51 PM: Data for table 'ContactsSourcesFact' has been posted.
+09/25/2023, 03:53:51 PM: Response Data : [object Object]
+09/25/2023, 03:53:51 PM: Data for table 'EmailTrendFact' has been posted.
+09/25/2023, 03:53:51 PM: Response Data : [object Object]
+09/25/2023, 03:53:51 PM: Data for table 'LoyaltyPointsFact' has been posted.
+09/25/2023, 03:53:51 PM: Response Data : [object Object]
+09/25/2023, 03:53:51 PM: Data for table 'VisitsFact' has been posted.
+09/25/2023, 03:53:51 PM: Response Data : [object Object]
+09/25/2023, 03:53:52 PM: Retrying 5
+09/25/2023, 04:03:37 PM: Script finished
+09/25/2023, 04:03:37 PM: Script started
+09/25/2023, 04:03:37 PM: BearerToken Created: yNkjRB3fENFOi3cEobBqpl-lQwmtNM3mViApfZjxkMcnzhAGxc1IAQ2oAFRAYRzB8m0jDUX9CtGd2cgrPUUOER7-Tjq-zA2VeYCy6cMymhit1vmjTRygm1V23DVWxocTQaXQ8w9xw5HBoAM6Ea5Xfo1mnrxEvVU9ESQMu4X0PbKQ2a0sTZsFfgruOOmUOVqSGTJzmTkCzRfIeAgUMHj6S2jDkGNyb4FHt4-BZvlpPzYbVpcY5RFJtXuT3Z38ZMDBK4jTDV5lDxQMU_TQ5e_28JgLoDNbrrdWTKkGtJa7gFy4uFcRokHTrRJO1fEF0mUK4KOI9aIjkNCcc4BZ2-CrjZ18OvM
+09/25/2023, 04:03:38 PM: Data for table 'BookingsFact' has been posted.
+09/25/2023, 04:03:38 PM: Response Data : [object Object]
+09/25/2023, 04:03:38 PM: Data for table 'ContactDetailsFact' has been posted.
+09/25/2023, 04:03:38 PM: Response Data : [object Object]
+09/25/2023, 04:03:38 PM: Data for table 'TransactionsFact' has been posted.
+09/25/2023, 04:03:38 PM: Response Data : [object Object]
+09/25/2023, 04:03:38 PM: Data for table 'ContactPreferencesFact' has been posted.
+09/25/2023, 04:03:38 PM: Response Data : [object Object]
+09/25/2023, 04:03:38 PM: Data for table 'ContactsSourcesFact' has been posted.
+09/25/2023, 04:03:38 PM: Response Data : [object Object]
+09/25/2023, 04:03:38 PM: Data for table 'EmailTrendFact' has been posted.
+09/25/2023, 04:03:38 PM: Response Data : [object Object]
+09/25/2023, 04:03:38 PM: Data for table 'LoyaltyPointsFact' has been posted.
+09/25/2023, 04:03:38 PM: Response Data : [object Object]
+09/25/2023, 04:03:38 PM: Data for table 'VisitsFact' has been posted.
+09/25/2023, 04:03:38 PM: Response Data : [object Object]
+09/25/2023, 04:03:39 PM: Retrying 5
+09/25/2023, 04:04:25 PM: Script finished
+09/25/2023, 04:04:25 PM: Script started
+09/25/2023, 04:04:25 PM: BearerToken Created: zbGMGpMR3Oc7wZKEmjSz-f778j5D5x92vwWU0O5rQVL3ehSl92zeHAD4ctt5djmPuws2vqaWzvNZCstb0He4A3sR92S2EeGHPJyhwht_U7h07HNMvglYtATUal5WW9GjVR19DwGkegkM07fGX5_TOPWCVbHT7rPg4FlGYaPaVHlSGs1jBpaNHjpKyVNyQ4Dhzcggk1CLOloVW1xBfqhqCm4m3oMmTtqF7uZV-Y3XUdHrSqJqtr6HuCekyN34ErT8fI3U2EPdvvdpb9aSOpW-7FbS7Uap2BFLuX33amiiey7A--bdOcvCaPIx4JwI-Cn86DlaDb_xtd4zOrHKown1Yinmv0M
+09/25/2023, 04:04:25 PM: Data for table 'BookingsFact' has been posted.
+09/25/2023, 04:04:25 PM: Response Data : [object Object]
+09/25/2023, 04:04:27 PM: Retrying 5
+09/25/2023, 04:05:13 PM: Script finished
+09/25/2023, 04:05:13 PM: Script started
+09/25/2023, 04:05:14 PM: BearerToken Created: MN1R8NNVk8uTcNI_Dua_nIh58woqp3-ZZAr6WXjUs8pYAPiZn5S7pJZEt01FWdxLCABtE0SqpE6y_SaAbPQpvjLoIJ-4kc1XPWJdmCpTbXFoddqZRIpDpVQxuWubFhFUVbeR2aimRgdBqGG1Q1BRjlRudmALR5BhsWllXE9IkpHP1k7YWwb4rOfJQ0yK76Yu_ClpaWSWvuW7jnUI8nhTiMaMDGlsjy4_IkCN3-At7QTdUA3RaRnLu5FGLU4KW1_dpRclH0IfvE2wYia65gBqXc4N5CfQnYjDNZ6RfiPvidS-KSUuZOLbjWX_OJlWMZsQo8bNDMXaTuXFl4p--ZbH7RIiXPc
+09/25/2023, 04:05:14 PM: Data for table 'BookingsFact' has been posted.
+09/25/2023, 04:05:14 PM: Response Data : [object Object]
+09/25/2023, 04:05:15 PM: Retrying 5
+09/25/2023, 04:08:05 PM: Script finished
+09/25/2023, 04:08:05 PM: Script started
+09/25/2023, 04:08:06 PM: BearerToken Created: HXoAmmzUCbwD6yiwkSUkra92b0w90esZfSft-94M70YDLtXHGne7qYI3bQRFI9VmOsZiSd7chE2nsF2qhLaj0pnDfeK_sd6uYKm3duFGEh8WpthNRDhOEHelc9WuHhXt8Zb2m_SXtcVqGL9uPmHFRLcHHq3a4RKPn_0-g8gKYbxN22O0WDIdXLlc_UADZsfTXo8fx-Peofv3YU-df03AA30o08SI1fcZk6JYR5Vnat4afb6Yd6zpo2pHSYeHkeLJ1lqCgiyOB4Ey1iKqmoY7oEjVEJOmUVENDK35AkfbvBxP2DUHT8Ct_tQbYs8K-kayCSPKyCNaCuen1gVysjqJR8FwK8M
+09/25/2023, 04:08:06 PM: Data for table 'BookingsFact' has been posted.
+09/25/2023, 04:08:06 PM: Response Data : [object Object]
+09/25/2023, 04:08:07 PM: Retrying 5
+09/25/2023, 04:08:21 PM: Script finished
+09/25/2023, 04:08:21 PM: Script started
+09/25/2023, 04:08:21 PM: BearerToken Created: zHQTXek6urQ7EZnvbG7phrhvtos3zntRMZx-AKstlX0wLulOEW5wdI29x5-m0yKuuyQKCX_pctd2Qq4fVPpUNXEi0lOhk1NsWChKafxPp_TatGiAQ-AAnIlD9NUqFnlOV3XT7cWNt9NefXRVulych3dkjN08fv8wHflixoqrXaJNLEa-a1gWjlzNBKwz5yXgsYg-kyc_RHKyXCw9BYc1_8EV7o2AKI-K0Z1z4IbVsKOm7hJKrUxI-oqySVOB2kopAxKrwmyqprGs5BcIeP0cD9RiDXdsDYFBxSsumU9N2konbskXcvJQt2I6to4RGUmWAw3Zqn4sJsQXZ8Yu9NxgHyIZYJk
+09/25/2023, 04:08:22 PM: Data for table 'BookingsFact' has been posted.
+09/25/2023, 04:08:22 PM: Response Data : [object Object]
+09/25/2023, 04:08:24 PM: Retrying 5
+09/25/2023, 04:09:08 PM: Script finished
+09/25/2023, 04:09:08 PM: Script started
+09/25/2023, 04:09:08 PM: BearerToken Created: sQVO1HFLA6ln2E9iE-p-XnKZNtqxtM62ZQ0ZYlq8g3ORYEn3MMug9YNfYyjyeqc_7dVa1QeBhOBwsV59j5z52O81jgCb4Hwj-tAxBmv3ybkrkCD5Ic4YSnMFpy6-eFPSjvZLj6IFTIOzUhTfw13GWTZiHhyaZ-iPa4oEnv9qS6MdnNqpm6BFUtn_MJOk434GwzLdpH-CC2vVxwmQ8KXDxhCfOMMwBRATPftId91Yd1QfPEbFqSL8i4LHyDNiiLf5q8ggHjEtNgM05Ova-1Cfk0gx24sVUhWYwM-6_VdJXksnvWIE0JDE22q5UlXi8YD72MyYvo0_49P81s1cBeWgCEprI1I
+09/25/2023, 04:09:08 PM: Response Data : [object Object]
+09/25/2023, 04:09:08 PM: Data for table 'BookingsFact' has been posted.
+09/25/2023, 04:09:09 PM: Retrying 5
+09/25/2023, 04:14:03 PM: Script finished
+09/25/2023, 04:14:03 PM: Script started
+09/25/2023, 04:14:04 PM: BearerToken Created: tYyx7XhBMo25vE7EBBLan1Pn70CJdW76uZecqxEbl20vMIg3E5ZD537tNkIkCFEbuqB1qFS0h2stu8ZHEAY3UdrgCnD_cKSABjS_--Ky2YUWRTgON2uJB_JrFeFP4bHkea01gBX44gVyTovMdFeuweJw7dpduZSOPOcwiGHeyP_BFvwq_dTgFlf_VoLbGhHxrUFvbT4nZj8DklEwfKemsRhyvUSnGYrPRVV_6TLSgyAYAq0MvGWW0e1uzttJYv3qOpESUNIYDmJTiW2FuuuRH56keJt_vCKjIyisvNYABx84QwTEsBuvZr_Hgb4EGdwAVCqsuTRUzlb4CK2zo2DpEB5vWLw
+09/25/2023, 04:14:04 PM: Data for table 'BookingsFact' has been posted.
+09/25/2023, 04:14:04 PM: Response Data : [object Object]
+09/25/2023, 04:14:05 PM: Retrying 5
+09/25/2023, 04:39:02 PM: Script finished
+09/25/2023, 04:39:02 PM: Script started
+09/25/2023, 04:39:02 PM: BearerToken Created: -uy2MxnD_bYerVjQQT3IvRO6uDZMMXmD6cY9XjRfIcaaB01CqFV9YQro2TFWVVG0T8CbyjStcK29fopZJ309GqUVDlFY7HEiZLQqCtkA6p73OjJbDbRR8SjILoj2U9UjQhCcDOJgUNFh32WccYvu2gkCRBNp5H2BNYbMi7sa1_-jCkJpsepEF7JniQmORnVVS3qt-Bl-IOLwLpVl8S8JP-Z8T51FkdPJQuF1F-IZRZjlWsaFWbFeDdh-_LJ2xZ1si32pxiwXoZcgjF1O8Ay1LywHmeZnlDHV-ABU11nmV9GFyP9urjYx6L0da5A71axd9nG1WrxAaIdJmQxYBc8x0X1u-C8
+09/25/2023, 04:39:02 PM: Data for table 'BookingsFact' has been posted.
+09/25/2023, 04:39:02 PM: Response Data : [object Object]
+09/25/2023, 04:39:04 PM: Retrying 5
+09/25/2023, 04:39:24 PM: Script finished
+09/25/2023, 04:39:24 PM: Script started
+09/25/2023, 04:39:24 PM: BearerToken Created: pF0uP6GMjcXLS8yZNGcc3AHu0NgZmzDGjsgDrbYhX2yyct5HJaEQjg1NZMZ0MyrEhOuS1_D5XNeMfLLLrYdvJQ58tYE3gjEGDTZPgz83xLVne9BJPnN3O7fsR7sWPc48XwuY1NcC8VUllNRYO0bKEx6mEckUYSVf-D1SIrvq4na8vka61bQZEENwcqcXr758IWou9FKlRjkjr9ogg783nfO-Ps9kPN8DX5Pr5ueeYPtciNHbiI10V7AK9wAxyVCCCeqwvqupHxpwS_VkR_kcJIno3zZUYu0pOqll3L8Mpm7GRUPMbuIqnIaUdNrPzjW9bxGTwxcfkHArTJ-Xi-AJQvlwbms
+09/25/2023, 04:39:24 PM: Data for table 'BookingsFact' has been posted.
+09/25/2023, 04:39:24 PM: Response Data : [object Object]
+09/25/2023, 04:39:26 PM: Retrying 5
+09/25/2023, 04:41:13 PM: Script finished
+09/25/2023, 04:41:13 PM: Script started
+09/25/2023, 04:41:13 PM: BearerToken Created: BaeXLRMdYPIFsj2THxQdhWoRT-c0CDo1B2ZIa_NWRA-TZJZsiRnVm865rqwtOrLNoe8Nc1RivzpLTbzspnQr-6ISbUa0p4-s7qalhAtOvzM5_XMIlnXoH9UA5zRoHooGf2bgJ55-TD4kfQlDz6ah8RY0PdbaRuVDWKk-A49LhY9S-UuuC4VS0gmY_yNfPBMoYvLICbBAYTVyYhhUKFTK5XS35fuADnAhgIv-n--AlyYihl2UporzCZs7xTQJc_2PSQLVqPACCmCvZYM32puAOP20TQrnSUwbKW1Q-9OffrVB-b912LEFCQGvZAxwF_tTBFJacbbh9tVDixXJmu3AqGNOdO8
+09/25/2023, 04:41:14 PM: Data for table 'BookingsFact' has been posted.
+09/25/2023, 04:41:14 PM: Response Data : [object Object]
+09/25/2023, 04:41:15 PM: Retrying 5
+09/25/2023, 04:42:04 PM: Script finished
+09/25/2023, 04:42:04 PM: Script started
+09/25/2023, 04:42:05 PM: BearerToken Created: xiEn-qqLH5kgjved_tP7IZ05sxA34YegM-1_Sk2NPvDRarOTesjuBccwx9ruWpQCFCq2ouiZuK-ENe_LgeZyIZdQrGtSKZicWeao7CwBqTwIxeybzIugs8ynIwzSJJjXwgXlyRR2XNqdS6NUIHIcQCY2wWvlLaz5bPyvoA-oyfFkhMUeslRo6SpfaBTUAN6vo1Hda9oj22QrsT67REcXRItgB-TmxwjPv6bmsgPeAdfEgMFuLW7iEkqc1H6oDnLEA7FsNoKwdR8lmLbREsU_uWecMcPHJujwMRmH-O7iORu9DSUsBV7ljEp3xWuA8Mle1KJhe1g_oMwC3uPaXOs9dA5BVoY
+09/25/2023, 04:42:05 PM: Data for table 'BookingsFact' has been posted.
+09/25/2023, 04:42:05 PM: Response Data : [object Object]
+09/25/2023, 04:42:07 PM: Retrying 5
+09/25/2023, 04:50:25 PM: Script finished
+09/25/2023, 04:50:26 PM: Script started
+09/25/2023, 04:50:26 PM: BearerToken Created: nIj3SaQ03uu6j8f-GpkpmOKVOL9DrHMY9mRicjvmwpdngywj_ZL79L2ovd_XpoHaybnQ84N08hr-tEbg4EaGPWVUc_q8JVQ1RpuEB508ltdXgxkhpIHVmgROPn2rm7vE4v3ENkV-WSTXAdPM3DZ6lB44_jOBMSoFdsg9MITTAvOXgbSw2x9jXdspsbDPxHcbY-lb0LaKB86i1vQMIhLhAgudklof8bmNfOg9qvgtHHQcIukffm8-m9fraKsT5lhS357DE83oZ9GHObCz0fW2ULNwMcqQwCgkgC5c1a0-nKp-w5g9rjg46454McRmIJYSsqUMTEaAHvgs1PETl-VgbNZgJ2o
+09/25/2023, 04:50:26 PM: Data for table 'BookingsFact' has been posted.
+09/25/2023, 04:50:26 PM: Response Data : [object Object]
+09/25/2023, 04:50:27 PM: Retrying 5
+09/25/2023, 04:50:57 PM: Script finished
+09/25/2023, 04:50:57 PM: Script started
+09/25/2023, 04:50:57 PM: BearerToken Created: NrUSmJNfRsCkhr7tCRf-Sd7Ef52OGphSPtvDoqYWA_OuFQqlGqjpQSdiEvcLPy2vDNXr1kP3nP4u3PKjUfG5FguH6QXYdU71SeLNCgdvHrbXWNqFPJXe2Z_SmLrhXbIbwHh2nsj5g4493xlyKQ8MAndrJEXJ9MYTGEO4ax0ba--giie-QCY9zSTNTqVo2BSH2N173lQXgrm7sEWHeNlgJ2-4dfuD81sYX5mmbZYo077a3u6dd9UvYtOVjOQrGe4WQvRqQ7PatLx80s7kwM_tSuyDKiXDJr5yepTVGgyvjinuk8oVPq2eLt7GmA7pIBG2oA_9Cvv7mPWwojonPAkcKGKcx7o
+09/25/2023, 04:50:57 PM: Data for table 'BookingsFact' has been posted.
+09/25/2023, 04:50:57 PM: Response Data : [object Object]
+09/25/2023, 04:50:58 PM: Retrying 5
+09/25/2023, 04:56:38 PM: Script finished
+09/25/2023, 04:56:38 PM: Script started
+09/25/2023, 04:56:38 PM: BearerToken Created: BuVcVCwhdU1ySxcdi9JdvAgiiazyF2MiqA2-8PUOKtWQ6rMKaWX5RytWEkM2sCdcN10HA1kB_ByDwSJhUadZkz0wD1nFkKy9iFenxeyPNw1SG_ypF004LeUO2M2NXa5-eBB0kppK7DbY9KL4UcKNO0LkWbUnRSWSu_svWvA8BrORL7V1o28UMpmllO4zIh5F6t2IsxJeSHo6iTbgG8bW7MgDYpYXlwAT7UxDcB6FpTcSXpK45SBXPQO9QweIppt2HDD97Dy_3Uv1JM8wBuMf5DTJHkccj5JXI1UQ-GHONqNNTjr7TY217GXNNAoiu7XLrW_6b051YLCg9sKdcjZWAiBHk04
+09/25/2023, 04:56:38 PM: Data for table 'BookingsFact' has been posted.
+09/25/2023, 04:56:38 PM: Response Data : [object Object]
+09/25/2023, 04:56:39 PM: Retrying 5
+09/25/2023, 04:57:33 PM: Script finished
+09/25/2023, 04:57:33 PM: Script started
+09/25/2023, 04:57:33 PM: BearerToken Created: klJAIVoQdiajMa5eBt6G3gOMVv9EMjKQDeMj0L7rWyiWN_cJFSWNorXfngB7omelxH33BqjtmkUoezNhkvY3bS-djGUg2dxrKBJjtk52wOE0yLykfk3qYeoHoTjq3mWghk7is1mApDkSQjM5_wGw9z0eghjtfoWUWuM27ooLjKxMYRRNuO7qEIpo1HPoZhvpxz736YMvQ6Ctsi1S5YLBnErDZz_hbhlBovIv_Vr8iVqrwaGVys5X_izYILCwu-z-8DAH_h-AKVaUjQih1xGuyccqhX2vY9yhsny5knBE5nqFKvvD2MhE0T57NS_AkY_A0ZUTuS9GJyZJ-gTwv_IbNX41OKQ
+09/25/2023, 04:57:33 PM: Data for table 'BookingsFact' has been posted.
+09/25/2023, 04:57:33 PM: Response Data : [object Object]
+09/25/2023, 04:57:35 PM: Retrying 5
+09/25/2023, 04:57:55 PM: Data from all API endpoints has been saved to the database.
+09/25/2023, 04:57:55 PM: DB connection closed
+09/25/2023, 04:57:55 PM: Script finished
+09/25/2023, 04:58:57 PM: Script finished
+09/25/2023, 04:58:57 PM: Script started
+09/25/2023, 04:58:57 PM: BearerToken Created: p1CtbqbRHIPrGGZTLlade7a3llztQdFsKceug1PjZskqQ1MgP1WwIQqbJvWbpCoqGkp-h__OTUsf47E6p38WKt49nNMGdr-dMK7ZHOnmV6w8k81rKmZJJ-fBnwc7dDssChYdkZo339NeF6v0wtPyPCP_Yve20lV93m_mYIl-pZRKUnZZo30BxAMDm3aYPRg79VOn_0LMtR0LyVpNF2x3TdJukStJi0TkTt01MhZ0sti5Sz_X2k6P_J4VnEMZxNPpt8fA2EZByzKXfirlyFzOmEe2kO2kRBhOeZSwZggwR7ZRa8W8JPsOZEgv1Ns4PkcDP6dnMUd1xZ2XNWzYcGaZgCjni4U
+09/25/2023, 04:58:57 PM: Data for table 'BookingsFact' has been posted.
+09/25/2023, 04:58:57 PM: Response Data : [object Object]
+09/25/2023, 04:58:58 PM: Retrying 5
+09/25/2023, 05:00:01 PM: Script finished
+09/25/2023, 05:00:01 PM: Script started
+09/25/2023, 05:00:01 PM: BearerToken Created: IHRpRPRfaW-TMB0Dkq-oZNDhd5km9n9z-Wjgd3Ug4DzcCPzl06ABqlQ1VcX0vAzY_kuY9z2fZeMB9q7LoY2NL8DpO5aWj661zx9W1T30icOMlu1SFUjtqWNsuJmxhSiRbkd-5lJoPIJ3rGA0Qs3NOKwgyEuiLvgIflTEBvBz24WSC_ReJoP0ILpQKH9G_AT6Rpq9j9xVOD-HxGrzPo2usT_ZZzG38n3VFXvWrWVqS-uo5N_lx9v4MD3ik6ZtUaaGsIRR6P-OPczDUCLTETcKRRMVh0hkpf9KfwOzz1evxUh6lroHgauPX4cu_cSqkgvlGlg5CIbUcI3Rnu9MVQfrTQ44va8
+09/25/2023, 05:00:02 PM: Data for table 'BookingsFact' has been posted.
+09/25/2023, 05:00:02 PM: Response Data : [object Object]
+09/25/2023, 05:00:02 PM: Retrying 5
+09/25/2023, 05:01:37 PM: Script finished
+09/25/2023, 05:01:37 PM: Script started
+09/25/2023, 05:01:37 PM: BearerToken Created: Ly5Lz-7lhFIk61hHWbwHWuQ-ZF-Oi-oFC8zTiztK8gt5ge1uLU-3cZQBqVlyU8yJcpOWc82R4Lx5UA0xdYNRVgR5nFbLbb86ugsYYLlycG-D2HyzPwPkHp_arFNx_wMUWa4yQFrcwNM9urd3XK24RUrwKkvZxn_k5HwEgsBKmVRTRiYJ21tmyZWNyKJNhpF5bgc8smqZnUTgb0SQ8qQiy22WJUP5A2so3U7QMSTEUHOpaJc8xOjrT8QjrRJmj6zZPRaiYp4JoWC5L7dyzCRSRM73S5Rd6RaA1pj_O57Q4mY3B2zJ1uHi7msW7vKKwTJY08eIRw8In5vE7Mg7Zc4bxYAWx6o
+09/25/2023, 05:01:37 PM: Data for table 'BookingsFact' has been posted.
+09/25/2023, 05:01:37 PM: Response Data : [object Object]
+09/25/2023, 05:01:38 PM: Retrying 5
+09/25/2023, 05:02:08 PM: Script finished
+09/25/2023, 05:02:08 PM: Script started
+09/25/2023, 05:02:08 PM: BearerToken Created: XbsViFghRXwarwGqiAMralWoRT_b6y191JctbuugIzxXZvCmKBRKsRqEembr3NhqQaL27lHSZridxEAG772PGPQ6470nKWcPT8lijcz4gVyRFj3lUnf57OSQdiUyQhQlzUUK6aFccVUmNJxiJX8Vsy4R6RwLt8zwJMAUUgE7MqihKI8wRsDIV9v7z5wVq4ubmUUHNulK8nEai72IiHkc2bJ1CxYtQYqj_xp5LShjqhFFWips6aEUJlCSuEK2EQN36dVf__hWMwMIEb4IMN8U8-5-1135IMbdgVGDQflNT_z8QP-cvT2yAfI2IydpzYPrEK_lBbVSTFUU58uHCihSOGLj52A
+09/25/2023, 05:02:08 PM: Data for table 'BookingsFact' has been posted.
+09/25/2023, 05:02:08 PM: Response Data : [object Object]
+09/25/2023, 05:02:10 PM: Retrying 5
+09/25/2023, 05:16:33 PM: Script finished
+09/25/2023, 05:16:33 PM: Script started
+09/25/2023, 05:16:33 PM: BearerToken Created: 3lnSCYCKxF3IYWd8UX6O1E938mF7hmKuV_U_7br4Haf2zfKaQwcCdPO9-Q-n1uZP9JPwptI7Q5db2pZHWzfro_iJqHkSFVj_WxN-MsdI1maX-o6ifGtoo0c26fCrgB11nxJcvuXBL6LvYufqbX3FR5h8R-dk3exdO9xw_5lxqqI_EXptviN-e7ZPEtkxByIJal4S9asMM9jCWaTwNJacKvX3ZDbCXlPiatdw6ufNn7edVl5qb220CDGg4rZ_fC2zPfVTefAyj75Ca6wj_35tYfy0Q_exNFPPBAaBYl8cK3dy6Xa5wK2atEWlbylOaggxS-__Zw
+09/25/2023, 05:16:34 PM: Data for table 'BookingsFact' has been posted.
+09/25/2023, 05:16:34 PM: Response Data : [object Object]
+09/25/2023, 05:16:35 PM: Retrying 5
+09/25/2023, 05:18:48 PM: Script finished
+09/25/2023, 05:18:48 PM: Script started
+09/25/2023, 05:18:48 PM: BearerToken Created: HVfTdLwzDBc98blzzf3ehXW80rDcxUiYtD5u__Ms2pGfDK8UVBRFP0WOhw6XGz3Ab4EUMoGN0lup0MP2uT5KrK0t69EFwwHf0yRiDkf_0UpXqaHZDxUmInrxwBlIjRERnYE2T-b-tI8xjBw6unBOQYMGjyIM3bcAUy7m8fMvL81Cj8nwo57E8A1xngZQPxbYlCN6gUTsXSzXt4NPC2_4f7oWR7dal2d74f55ywq7SSIPouqk-XkNci5A7kprV3aBmvyI2PJsPmoIEpv9xu9-JAcDOOjfC1dPEZ5xQHbObECU5-EvVsaXRZ7EjJTe1jnXwK5qyV5w9_AeFeoaKALPqlHb-vY
+09/25/2023, 05:18:48 PM: Data for table 'BookingsFact' has been posted.
+09/25/2023, 05:18:48 PM: Response Data : [object Object]
+09/25/2023, 05:18:50 PM: 0 Data has been fetched and saved to the BookingsFact Table.
+09/25/2023, 05:18:51 PM: 1 Data has been fetched and saved to the BookingsFact Table.
+09/25/2023, 05:18:52 PM: 2 Data has been fetched and saved to the BookingsFact Table.
+09/25/2023, 05:18:53 PM: 3 Data has been fetched and saved to the BookingsFact Table.
+09/25/2023, 05:18:54 PM: 4 Data has been fetched and saved to the BookingsFact Table.
+09/25/2023, 05:18:54 PM: No more data retrieved from the GetBookingsFact API.
+09/25/2023, 05:18:54 PM: Data from all API endpoints has been saved to the database.
+09/25/2023, 05:18:54 PM: DB connection closed
+09/25/2023, 05:18:54 PM: Script finished
+09/25/2023, 05:25:59 PM: Script finished
+09/25/2023, 05:25:59 PM: Script started
+09/25/2023, 05:26:00 PM: BearerToken Created: sOMurQ4EZRnIINdJkWs81JuslpYD1d7YFyq0Dqc-q3B5549UydG6_uPFRERQMkdPvBC_XZ-g584ZyzMLTCm8kURO1fg_XTX45L1NmJ8mUQ_d-RQz-dTUUUvSKZHZX-VBsaH9QKUP7gHSVklmnXqgmaKcOtV7gotdEhRlZykJpK4uIt2vU_DaWfz4YGEtBHSXdNlPdPizWYXgydKChKjtZklk4j-bPMyyTmxVDSyqei_rSsPSqnVpqJYWdk6iAFa_WqsyskrqUpSMtKa1H_j8-3lOUD7jVuyu0Vaw_cjy15qvpGJbUww22UkNTq9MNDg458oUtG-ENE2tBANclKXUs396Aww
+09/25/2023, 05:26:00 PM: Data for table 'BookingsFact' has been posted.
+09/25/2023, 05:26:00 PM: Response Data : [object Object]
+09/25/2023, 05:26:00 PM: Data for table 'ContactDetailsFact' has been posted.
+09/25/2023, 05:26:00 PM: Response Data : [object Object]
+09/25/2023, 05:26:00 PM: Data for table 'TransactionsFact' has been posted.
+09/25/2023, 05:26:00 PM: Response Data : [object Object]
+09/25/2023, 05:26:00 PM: Data for table 'ContactPreferencesFact' has been posted.
+09/25/2023, 05:26:00 PM: Response Data : [object Object]
+09/25/2023, 05:26:00 PM: Data for table 'ContactsSourcesFact' has been posted.
+09/25/2023, 05:26:00 PM: Response Data : [object Object]
+09/25/2023, 05:26:00 PM: Data for table 'EmailTrendFact' has been posted.
+09/25/2023, 05:26:00 PM: Response Data : [object Object]
+09/25/2023, 05:26:00 PM: Data for table 'LoyaltyPointsFact' has been posted.
+09/25/2023, 05:26:00 PM: Response Data : [object Object]
+09/25/2023, 05:26:00 PM: Data for table 'VisitsFact' has been posted.
+09/25/2023, 05:26:00 PM: Response Data : [object Object]
+09/25/2023, 05:26:01 PM: 0 Data has been fetched and saved to the BookingsFact Table.
+09/25/2023, 05:26:03 PM: 1 Data has been fetched and saved to the BookingsFact Table.
+09/25/2023, 05:26:04 PM: 2 Data has been fetched and saved to the BookingsFact Table.
+09/25/2023, 05:26:05 PM: 3 Data has been fetched and saved to the BookingsFact Table.
+09/25/2023, 05:26:06 PM: 4 Data has been fetched and saved to the BookingsFact Table.
+09/25/2023, 05:26:06 PM: No more data retrieved from the GetBookingsFact API.
+09/25/2023, 05:26:07 PM: GetContactDetailsFact API response does not contain valid data.
+09/25/2023, 05:26:09 PM: 0 Data has been fetched and saved to the TransactionsFact Table.
+09/25/2023, 05:26:11 PM: 1 Data has been fetched and saved to the TransactionsFact Table.
+09/25/2023, 05:26:12 PM: 2 Data has been fetched and saved to the TransactionsFact Table.
+09/25/2023, 05:26:14 PM: 3 Data has been fetched and saved to the TransactionsFact Table.
+09/25/2023, 05:26:15 PM: 4 Data has been fetched and saved to the TransactionsFact Table.
+09/25/2023, 05:26:17 PM: 5 Data has been fetched and saved to the TransactionsFact Table.
+09/25/2023, 05:26:18 PM: 6 Data has been fetched and saved to the TransactionsFact Table.
+09/25/2023, 05:26:19 PM: 7 Data has been fetched and saved to the TransactionsFact Table.
+09/25/2023, 05:26:20 PM: 8 Data has been fetched and saved to the TransactionsFact Table.
+09/25/2023, 05:26:21 PM: 9 Data has been fetched and saved to the TransactionsFact Table.
+09/25/2023, 05:26:22 PM: 10 Data has been fetched and saved to the TransactionsFact Table.
+09/25/2023, 05:26:23 PM: 11 Data has been fetched and saved to the TransactionsFact Table.
+09/25/2023, 05:26:25 PM: 12 Data has been fetched and saved to the TransactionsFact Table.
+09/25/2023, 05:26:27 PM: 13 Data has been fetched and saved to the TransactionsFact Table.
+09/25/2023, 05:26:29 PM: 14 Data has been fetched and saved to the TransactionsFact Table.
+09/25/2023, 05:26:31 PM: 15 Data has been fetched and saved to the TransactionsFact Table.
+09/25/2023, 05:26:33 PM: 16 Data has been fetched and saved to the TransactionsFact Table.
+09/25/2023, 05:26:35 PM: 17 Data has been fetched and saved to the TransactionsFact Table.
+09/25/2023, 05:26:36 PM: 18 Data has been fetched and saved to the TransactionsFact Table.
+09/25/2023, 05:26:39 PM: 19 Data has been fetched and saved to the TransactionsFact Table.
+09/25/2023, 05:26:40 PM: 20 Data has been fetched and saved to the TransactionsFact Table.
+09/25/2023, 05:26:41 PM: 21 Data has been fetched and saved to the TransactionsFact Table.
+09/25/2023, 05:26:42 PM: 22 Data has been fetched and saved to the TransactionsFact Table.
+09/25/2023, 05:26:44 PM: 23 Data has been fetched and saved to the TransactionsFact Table.
+09/25/2023, 05:26:45 PM: 24 Data has been fetched and saved to the TransactionsFact Table.
+09/25/2023, 05:26:47 PM: 25 Data has been fetched and saved to the TransactionsFact Table.
+09/25/2023, 05:26:48 PM: 26 Data has been fetched and saved to the TransactionsFact Table.
+09/25/2023, 05:26:48 PM: No more data retrieved from the GetTransactionsFact API.
+09/25/2023, 05:26:52 PM: 0 Data has been fetched and saved to the ContactPreferencesFact Table.
+09/25/2023, 05:26:53 PM: 1 Data has been fetched and saved to the ContactPreferencesFact Table.
+09/25/2023, 05:26:55 PM: 2 Data has been fetched and saved to the ContactPreferencesFact Table.
+09/25/2023, 05:26:56 PM: 3 Data has been fetched and saved to the ContactPreferencesFact Table.
+09/25/2023, 05:26:58 PM: 4 Data has been fetched and saved to the ContactPreferencesFact Table.
+09/25/2023, 05:26:59 PM: 5 Data has been fetched and saved to the ContactPreferencesFact Table.
+09/25/2023, 05:27:00 PM: 6 Data has been fetched and saved to the ContactPreferencesFact Table.
+09/25/2023, 05:27:02 PM: 7 Data has been fetched and saved to the ContactPreferencesFact Table.
+09/25/2023, 05:27:02 PM: No more data retrieved from the GetContactPreferencesFact API.
+09/25/2023, 05:27:04 PM: 0 Data has been fetched and saved to the ContactSourcesFact Table.
+09/25/2023, 05:27:04 PM: 1 Data has been fetched and saved to the ContactSourcesFact Table.
+09/25/2023, 05:27:05 PM: 2 Data has been fetched and saved to the ContactSourcesFact Table.
+09/25/2023, 05:27:07 PM: 3 Data has been fetched and saved to the ContactSourcesFact Table.
+09/25/2023, 05:27:07 PM: 4 Data has been fetched and saved to the ContactSourcesFact Table.
+09/25/2023, 05:27:08 PM: 5 Data has been fetched and saved to the ContactSourcesFact Table.
+09/25/2023, 05:27:08 PM: No more data retrieved from the GetContactSourcesFact API.
+09/25/2023, 05:27:14 PM: 0 Data has been fetched and saved to the EmailTrendFact Table.
+09/25/2023, 05:27:17 PM: 1 Data has been fetched and saved to the EmailTrendFact Table.
+09/25/2023, 05:27:19 PM: 2 Data has been fetched and saved to the EmailTrendFact Table.
+09/25/2023, 05:27:21 PM: 3 Data has been fetched and saved to the EmailTrendFact Table.
+09/25/2023, 05:27:24 PM: 4 Data has been fetched and saved to the EmailTrendFact Table.
+09/25/2023, 05:27:27 PM: 5 Data has been fetched and saved to the EmailTrendFact Table.
+09/25/2023, 05:27:30 PM: 6 Data has been fetched and saved to the EmailTrendFact Table.
+09/25/2023, 05:27:33 PM: 7 Data has been fetched and saved to the EmailTrendFact Table.
+09/25/2023, 05:27:36 PM: 8 Data has been fetched and saved to the EmailTrendFact Table.
+09/25/2023, 05:27:39 PM: 9 Data has been fetched and saved to the EmailTrendFact Table.
+09/25/2023, 05:27:42 PM: 10 Data has been fetched and saved to the EmailTrendFact Table.
+09/25/2023, 05:27:45 PM: 11 Data has been fetched and saved to the EmailTrendFact Table.
+09/25/2023, 05:27:47 PM: 12 Data has been fetched and saved to the EmailTrendFact Table.
+09/25/2023, 05:27:51 PM: 13 Data has been fetched and saved to the EmailTrendFact Table.
+09/25/2023, 05:27:54 PM: 14 Data has been fetched and saved to the EmailTrendFact Table.
+09/25/2023, 05:27:57 PM: 15 Data has been fetched and saved to the EmailTrendFact Table.
+09/25/2023, 05:28:00 PM: 16 Data has been fetched and saved to the EmailTrendFact Table.
+09/25/2023, 05:28:03 PM: 17 Data has been fetched and saved to the EmailTrendFact Table.
+09/25/2023, 05:28:05 PM: 18 Data has been fetched and saved to the EmailTrendFact Table.
+09/25/2023, 05:28:08 PM: 19 Data has been fetched and saved to the EmailTrendFact Table.
+09/25/2023, 05:28:12 PM: 20 Data has been fetched and saved to the EmailTrendFact Table.
+09/25/2023, 05:28:15 PM: 21 Data has been fetched and saved to the EmailTrendFact Table.
+09/25/2023, 05:28:19 PM: 22 Data has been fetched and saved to the EmailTrendFact Table.
+09/25/2023, 05:28:22 PM: 23 Data has been fetched and saved to the EmailTrendFact Table.
+09/25/2023, 05:28:26 PM: 24 Data has been fetched and saved to the EmailTrendFact Table.
+09/25/2023, 05:28:29 PM: 25 Data has been fetched and saved to the EmailTrendFact Table.
+09/25/2023, 05:28:31 PM: 26 Data has been fetched and saved to the EmailTrendFact Table.
+09/25/2023, 05:28:32 PM: 27 Data has been fetched and saved to the EmailTrendFact Table.
+09/25/2023, 05:28:35 PM: 28 Data has been fetched and saved to the EmailTrendFact Table.
+09/25/2023, 05:28:36 PM: 29 Data has been fetched and saved to the EmailTrendFact Table.
+09/25/2023, 05:28:38 PM: 30 Data has been fetched and saved to the EmailTrendFact Table.
+09/25/2023, 05:28:42 PM: 31 Data has been fetched and saved to the EmailTrendFact Table.
+09/25/2023, 05:28:44 PM: 32 Data has been fetched and saved to the EmailTrendFact Table.
+09/25/2023, 05:28:46 PM: 33 Data has been fetched and saved to the EmailTrendFact Table.
+09/25/2023, 05:28:49 PM: 34 Data has been fetched and saved to the EmailTrendFact Table.
+09/25/2023, 05:28:52 PM: 35 Data has been fetched and saved to the EmailTrendFact Table.
+09/25/2023, 05:28:55 PM: 36 Data has been fetched and saved to the EmailTrendFact Table.
+09/25/2023, 05:28:58 PM: 37 Data has been fetched and saved to the EmailTrendFact Table.
+09/25/2023, 05:29:02 PM: 38 Data has been fetched and saved to the EmailTrendFact Table.
+09/25/2023, 05:29:05 PM: 39 Data has been fetched and saved to the EmailTrendFact Table.
+09/25/2023, 05:29:06 PM: 40 Data has been fetched and saved to the EmailTrendFact Table.
+09/25/2023, 05:29:07 PM: 41 Data has been fetched and saved to the EmailTrendFact Table.
+09/25/2023, 05:29:09 PM: 42 Data has been fetched and saved to the EmailTrendFact Table.
+09/25/2023, 05:29:14 PM: 43 Data has been fetched and saved to the EmailTrendFact Table.
+09/25/2023, 05:29:17 PM: 44 Data has been fetched and saved to the EmailTrendFact Table.
+09/25/2023, 05:29:20 PM: 45 Data has been fetched and saved to the EmailTrendFact Table.
+09/25/2023, 05:29:22 PM: 46 Data has been fetched and saved to the EmailTrendFact Table.
+09/25/2023, 05:29:24 PM: 47 Data has been fetched and saved to the EmailTrendFact Table.
+09/25/2023, 05:29:26 PM: 48 Data has been fetched and saved to the EmailTrendFact Table.
+09/25/2023, 05:29:29 PM: 49 Data has been fetched and saved to the EmailTrendFact Table.
+09/25/2023, 05:29:32 PM: 50 Data has been fetched and saved to the EmailTrendFact Table.
+09/25/2023, 05:29:36 PM: 51 Data has been fetched and saved to the EmailTrendFact Table.
+09/25/2023, 05:29:38 PM: 52 Data has been fetched and saved to the EmailTrendFact Table.
+09/25/2023, 05:29:41 PM: 53 Data has been fetched and saved to the EmailTrendFact Table.
+09/25/2023, 05:29:43 PM: 54 Data has been fetched and saved to the EmailTrendFact Table.
+09/25/2023, 05:29:46 PM: 55 Data has been fetched and saved to the EmailTrendFact Table.
+09/25/2023, 05:29:48 PM: 56 Data has been fetched and saved to the EmailTrendFact Table.
+09/25/2023, 05:29:55 PM: 57 Data has been fetched and saved to the EmailTrendFact Table.
+09/25/2023, 05:29:58 PM: 58 Data has been fetched and saved to the EmailTrendFact Table.
+09/25/2023, 05:30:00 PM: 59 Data has been fetched and saved to the EmailTrendFact Table.
+09/25/2023, 05:30:03 PM: 60 Data has been fetched and saved to the EmailTrendFact Table.
+09/25/2023, 05:30:07 PM: 61 Data has been fetched and saved to the EmailTrendFact Table.
+09/25/2023, 05:30:10 PM: 62 Data has been fetched and saved to the EmailTrendFact Table.
+09/25/2023, 05:30:13 PM: 63 Data has been fetched and saved to the EmailTrendFact Table.
+09/25/2023, 05:30:17 PM: 64 Data has been fetched and saved to the EmailTrendFact Table.
+09/25/2023, 05:30:18 PM: 65 Data has been fetched and saved to the EmailTrendFact Table.
+09/25/2023, 05:30:18 PM: No more data retrieved from the GetEmailTrendFact API.
+09/25/2023, 05:30:19 PM: 0 Data has been fetched and saved to the LoyaltyPointsFact Table.
+09/25/2023, 05:30:19 PM: No more data retrieved from the GetLoyaltyPointsFact API.
+09/25/2023, 05:30:20 PM: 0 Data has been fetched and saved to the VisitsFact Table.
+09/25/2023, 05:30:21 PM: No more data retrieved from the GetVisitsFact API.
+09/25/2023, 05:30:21 PM: Data from all API endpoints has been saved to the database.
+09/25/2023, 05:30:21 PM: DB connection closed
+09/25/2023, 05:30:21 PM: Script finished

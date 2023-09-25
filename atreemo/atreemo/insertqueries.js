@@ -1,26 +1,23 @@
-// queries.js
-
-const queries = {
-    insertBookingsFact: `
-      INSERT INTO bookingsfact(
-        BookingsFactID, BookingID, CtcID, BookingDateTime, VistDateTime,
-        StatusID, Status, Source, EstimatedValue, SiteID, SiteName, Covers, ModifiedDate
-      ) VALUES ? ON DUPLICATE KEY UPDATE
-        BookingsFactID = VALUES(BookingsFactID),
-        CtcId = VALUES(CtcID),
-        BookingDateTime = VALUES(BookingDateTime),
-        VistDateTime = VALUES(VistDateTime),
-        StatusID = VALUES(StatusID),
-        Status = VALUES(Status),
-        Source = VALUES(Source),
-        EstimatedValue = VALUES(EstimatedValue),
-        SiteID = VALUES(SiteID),
-        SiteName = VALUES(SiteName),
-        Covers = VALUES(Covers),
-        ModifiedDate = VALUES(ModifiedDate);
-    `,
-    
-    insertContactDetailsFact:`
+const insertqueries = {
+  insertBookingsFact: `
+  INSERT INTO bookingsfact(
+    BookingsFactID, BookingID, CtcID, BookingDateTime, VistDateTime,
+    StatusID, Status, Source, EstimatedValue, SiteID, SiteName, Covers, ModifiedDate
+  ) VALUES ? ON DUPLICATE KEY UPDATE
+    BookingsFactID = VALUES(BookingsFactID),
+    CtcId = VALUES(CtcID),
+    BookingDateTime = VALUES(BookingDateTime),
+    VistDateTime = VALUES(VistDateTime),
+    StatusID = VALUES(StatusID),
+    Status = VALUES(Status),
+    Source = VALUES(Source),
+    EstimatedValue = VALUES(EstimatedValue),
+    SiteID = VALUES(SiteID),
+    SiteName = VALUES(SiteName),
+    Covers = VALUES(Covers),
+    ModifiedDate = VALUES(ModifiedDate)
+`,
+  insertContactDetailsFact: `
     INSERT INTO contactdetailsfact(ContactDetailsFactID, CtcID, Gender, BirthDateYear, BirthdateMonth, PostCodeSector, FavouriteSiteID, FavouriteSite, CreateDate, SourceID, PointBalance, CorporateName, TiersName, Deleted, ModifiedDate) VALUES ?  
     ON DUPLICATE KEY UPDATE  
     ContactDetailsFactID = VALUES(ContactDetailsFactID),
@@ -38,7 +35,7 @@ const queries = {
     Deleted = VALUES(Deleted),  
     ModifiedDate = VALUES(ModifiedDate)
     `,
-    insertTransactionsFact:`
+  insertTransactionsFact: `
     INSERT INTO transactionsfact(TransactionsFactID,CtcID, VoucherCode,SiteID,SiteName,OrderDate,TotalSpend,OrderType,OrderStatus,AmountPaid,DiscountAmount,SaleType,OrderID,OrderChannel,Source,PaidWithPoints,ModifiedDate,OrderUniqueID) VALUES ?  
         ON DUPLICATE KEY UPDATE    
         CtcID = VALUES(CtcID),  
@@ -59,7 +56,7 @@ const queries = {
         ModifiedDate = VALUES(ModifiedDate),  
         OrderUniqueID = VALUES(OrderUniqueID);
     `,
-    insertContactPreferencesFact:`
+  insertContactPreferencesFact: `
     INSERT INTO contactpreferencesfact(ContactPreferencesFactID,CtcID,BrandName,Preferences,WebPushOptin,PushOptin,EmailOptin,MailOptin,PhoneOptin,SMSOptin,ModifiedDate) VALUES ?  
         ON DUPLICATE KEY UPDATE  
         ContactPreferencesFactID = VALUES(ContactPreferencesFactID),  
@@ -74,7 +71,7 @@ const queries = {
         SMSOptin = VALUES(SMSOptin),  
         ModifiedDate = VALUES(ModifiedDate);
     `,
-    insertContactSourcesFact:`
+  insertContactSourcesFact: `
     INSERT INTO contactsourcesfact (ContactsSourcesFactID,CtcID,SourceID,OriginID,BrandName, ModifiedDate) VALUES ?  
         ON DUPLICATE KEY UPDATE  
         ContactsSourcesFactID = VALUES(ContactsSourcesFactID),  
@@ -84,7 +81,7 @@ const queries = {
         BrandName = VALUES(BrandName),  
         ModifiedDate = VALUES(ModifiedDate);
     `,
-    insertEmailTrendFact:`
+  insertEmailTrendFact: `
     INSERT INTO emailtrendfact(EmailTrendFactID,CtcID,OpCode,PrjMkgTitle,Subject,CategoryID,Category,SendDate,OpenDate,TimeOfDayEmailOpened,DayOfWeekEmailOpened,SubmittedBy,SenderProfileID,SenderProfile,BrandName,DomainName,IsFollowUp,IsComplaint,Status,Error,FirstTrial,LastTrial,NbTrial,NbClicks,NbViews,Unsubscribe,CostPerItem,ModifiedDate) VALUES ? 
         ON DUPLICATE KEY UPDATE  
         EmailTrendFactID = VALUES(EmailTrendFactID),  
@@ -115,7 +112,7 @@ const queries = {
         CostPerItem = VALUES(CostPerItem),  
         ModifiedDate = VALUES(ModifiedDate);
     `,
-    insertLoyaltyPointsFact:`
+  insertLoyaltyPointsFact: `
     INSERT INTO atreemo.loyaltypointsfact(LoyaltyPointsFactID,CtcID,OrderUniqueID,SiteID,SiteName,ActionDate,Points,Source,ModifiedDate) VALUES ? 
         ON DUPLICATE KEY UPDATE  
         LoyaltyPointsFactID = VALUES(LoyaltyPointsFactID),  
@@ -128,7 +125,7 @@ const queries = {
         Source = VALUES(Source),  
         ModifiedDate = VALUES(ModifiedDate);
     `,
-    insertVisitsFact:`
+  insertVisitsFact: `
     INSERT INTO visitsfact(VisitsFactID,CtcID,VisitDateTime,SiteID,SiteName,DirectSpent,IndirectSpent,Source,ModifiedDate) VALUES ? 
         ON DUPLICATE KEY UPDATE  
         VisitsFactID = VALUES(VisitsFactID),  
@@ -141,9 +138,6 @@ const queries = {
         Source = VALUES(Source),  
         ModifiedDate = VALUES(ModifiedDate);
     `,
-      
 };
-  module.exports = {
-    queries,
-};
-  
+
+module.exports = insertqueries;

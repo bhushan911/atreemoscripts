@@ -1,23 +1,24 @@
 const axios = require("axios");
 const mysql = require("mysql2");
-const queries = require('./queries');
+delete require.cache[require.resolve("./insertqueries.js")];
+const queries = require("./insertqueries.js");
 const { databaseConfig } = require("./config.js");
 const { logToFile } = require("./log.js");
 const { log } = require("console");
 
 let count = 0;
 
-async function getBookingsFact(BearerToken,connection,queryName) {
+async function getBookingsFact(BearerToken, connection, queryName) {
   const accessToken = BearerToken;
   const apiUrl =
     "https://atreemo.updates.thedrg.co.uk/api/BIDWHouse/GetBookingsFact";
-    let retryCount = 5; 
+  let retryCount = 5;
   // const connection = mysql.createConnection(databaseConfig);
-  
+
   try {
     // await connection.connect();
     while (retryCount > 0) {
-    // while (true) {
+      // while (true) {
       let data = [];
 
       const response = await axios.get(`${apiUrl}?pageSize=*`, {
@@ -51,7 +52,6 @@ async function getBookingsFact(BearerToken,connection,queryName) {
       // Assuming 'data' is an array of objects obtained from the API
       // Save data to MySQL database
       const insertQuery = queries[queryName];
-
       if (!insertQuery) {
         throw new Error(`Query name '${insertQuery}' not found in queries.`);
       }
@@ -72,7 +72,7 @@ async function getBookingsFact(BearerToken,connection,queryName) {
         item.ModifiedDate,
       ]);
 
-       connection.query(insertQuery, [values]);
+      connection.query(insertQuery, [values]);
 
       console.log(
         count + " Data has been fetched and saved to the BookingsFact Table."
@@ -81,9 +81,8 @@ async function getBookingsFact(BearerToken,connection,queryName) {
         `${count} Data has been fetched and saved to the BookingsFact Table.`
       );
       count++;
-    // }
-  }
-    
+      // }
+    }
   } catch (error) {
     console.error("Error:", error);
     console.log(`Retrying ${retryCount}`);
@@ -100,16 +99,15 @@ async function getBookingsFact(BearerToken,connection,queryName) {
   }
 }
 
-async function getContactDetailsFact(BearerToken,connection,queryName) {
+async function getContactDetailsFact(BearerToken, connection, queryName) {
   const accessToken = BearerToken;
   const apiUrl =
     "https://atreemo.updates.thedrg.co.uk/api/BIDWHouse/GetContactDetailsFact";
-    let retryCount = 5; 
+  let retryCount = 5;
 
   try {
-    
     while (retryCount > 0) {
-    // while (true) {
+      // while (true) {
       let data = [];
 
       const response = await axios.get(`${apiUrl}?pageSize=*`, {
@@ -145,7 +143,6 @@ async function getContactDetailsFact(BearerToken,connection,queryName) {
       // Assuming 'data' is an array of objects obtained from the API
       // Save data to MySQL database
       const insertQuery = queries[queryName];
-    
 
       const values = data.map((item) => [
         item.ContactDetailsFactID,
@@ -165,7 +162,7 @@ async function getContactDetailsFact(BearerToken,connection,queryName) {
         item.ModifiedDate,
       ]);
 
-       connection.query(insertQuery, [values]);
+      connection.query(insertQuery, [values]);
 
       console.log(
         count +
@@ -175,8 +172,8 @@ async function getContactDetailsFact(BearerToken,connection,queryName) {
         `${count} Data has been fetched and saved to the ContactDetailsFact Table.`
       );
       count++;
-    // }
-  }
+      // }
+    }
   } catch (error) {
     console.error("Error:", error);
     console.log(`Retrying ${retryCount}`);
@@ -193,18 +190,15 @@ async function getContactDetailsFact(BearerToken,connection,queryName) {
   }
 }
 
-async function getTransactionsFact(BearerToken,connection,queryName) {
+async function getTransactionsFact(BearerToken, connection, queryName) {
   const accessToken = BearerToken;
   const apiUrl =
     "https://atreemo.updates.thedrg.co.uk/api/BIDWHouse/GetTransactionsFact";
-    let retryCount = 5; 
-
-  
+  let retryCount = 5;
 
   try {
-   
     while (retryCount > 0) {
-    // while (true) {
+      // while (true) {
       let data = [];
 
       const response = await axios.get(`${apiUrl}?pageSize=*`, {
@@ -238,7 +232,6 @@ async function getTransactionsFact(BearerToken,connection,queryName) {
       // Assuming 'data' is an array of objects obtained from the API
       // Save data to MySQL database
       const insertQuery = queries[queryName];
-        
 
       const values = data.map((item) => [
         item.TransactionsFactID,
@@ -261,17 +254,18 @@ async function getTransactionsFact(BearerToken,connection,queryName) {
         item.OrderUniqueID,
       ]);
 
-       connection.query(insertQuery, [values]);
+      connection.query(insertQuery, [values]);
 
       console.log(
-        count + " Data has been fetched and saved to the TransactionsFact Table."
+        count +
+          " Data has been fetched and saved to the TransactionsFact Table."
       );
       logToFile(
         `${count} Data has been fetched and saved to the TransactionsFact Table.`
       );
       count++;
-    // }
-  }
+      // }
+    }
   } catch (error) {
     console.error("Error:", error);
     console.log(`Retrying ${retryCount}`);
@@ -288,16 +282,15 @@ async function getTransactionsFact(BearerToken,connection,queryName) {
   }
 }
 
-async function getContactPreferencesFact(BearerToken,connection,queryName) {
+async function getContactPreferencesFact(BearerToken, connection, queryName) {
   const accessToken = BearerToken;
   const apiUrl =
     "https://atreemo.updates.thedrg.co.uk/api/BIDWHouse/GetContactPreferencesFact";
-    let retryCount = 5; 
+  let retryCount = 5;
 
   try {
- 
     while (retryCount > 0) {
-    // while (true) {
+      // while (true) {
       let data = [];
 
       const response = await axios.get(`${apiUrl}?pageSize=*`, {
@@ -335,7 +328,6 @@ async function getContactPreferencesFact(BearerToken,connection,queryName) {
       // Assuming 'data' is an array of objects obtained from the API
       // Save data to MySQL database
       const insertQuery = queries[queryName];
-        
 
       const values = data.map((item) => [
         item.ContactPreferencesFactID,
@@ -351,17 +343,18 @@ async function getContactPreferencesFact(BearerToken,connection,queryName) {
         item.ModifiedDate,
       ]);
 
-       connection.query(insertQuery, [values]);
+      connection.query(insertQuery, [values]);
 
       console.log(
-        count+" Data has been fetched and saved to the ContactPreferencesFact Table."
+        count +
+          " Data has been fetched and saved to the ContactPreferencesFact Table."
       );
       logToFile(
         `${count} Data has been fetched and saved to the ContactPreferencesFact Table.`
       );
       count++;
-    // }
-  }
+      // }
+    }
   } catch (error) {
     console.error("Error:", error);
     console.log(`Retrying ${retryCount}`);
@@ -378,16 +371,15 @@ async function getContactPreferencesFact(BearerToken,connection,queryName) {
   }
 }
 
-async function getContactSourcesFact(BearerToken,connection,queryName) {
+async function getContactSourcesFact(BearerToken, connection, queryName) {
   const accessToken = BearerToken;
   const apiUrl =
     "https://atreemo.updates.thedrg.co.uk/api/BIDWHouse/GetContactSourcesFact";
-    let retryCount = 5; 
+  let retryCount = 5;
 
   try {
-    
     while (retryCount > 0) {
-    // while (true) {
+      // while (true) {
       let data = [];
 
       const response = await axios.get(`${apiUrl}?pageSize=*`, {
@@ -423,7 +415,6 @@ async function getContactSourcesFact(BearerToken,connection,queryName) {
       // Assuming 'data' is an array of objects obtained from the API
       // Save data to MySQL database
       const insertQuery = queries[queryName];
-        
 
       const values = data.map((item) => [
         item.ContactsSourcesFactID,
@@ -434,18 +425,19 @@ async function getContactSourcesFact(BearerToken,connection,queryName) {
         item.ModifiedDate,
       ]);
 
-       connection.query(insertQuery, [values]);
+      connection.query(insertQuery, [values]);
 
       console.log(
-        count+ " Data has been fetched and saved to the ContactSourcesFact Table."
+        count +
+          " Data has been fetched and saved to the ContactSourcesFact Table."
       );
       logToFile(
         `${count} Data has been fetched and saved to the ContactSourcesFact Table.`
       );
       count++;
-    // }
-  }
-  }catch (error) {
+      // }
+    }
+  } catch (error) {
     console.error("Error:", error);
     console.log(`Retrying ${retryCount}`);
     logToFile(`Retrying ${retryCount}`);
@@ -461,18 +453,15 @@ async function getContactSourcesFact(BearerToken,connection,queryName) {
   }
 }
 
-async function getEmailTrendFact(BearerToken,connection,queryName) {
+async function getEmailTrendFact(BearerToken, connection, queryName) {
   const accessToken = BearerToken;
   const apiUrl =
     "https://atreemo.updates.thedrg.co.uk/api/BIDWHouse/GetEmailTrendFact";
-    let retryCount = 5; 
-
-
+  let retryCount = 5;
 
   try {
- 
     while (retryCount > 0) {
-    // while (true) {
+      // while (true) {
       let data = [];
 
       const response = await axios.get(`${apiUrl}?pageSize=*`, {
@@ -538,15 +527,17 @@ async function getEmailTrendFact(BearerToken,connection,queryName) {
         item.ModifiedDate,
       ]);
 
-       connection.query(insertQuery, [values]);
+      connection.query(insertQuery, [values]);
 
       console.log(
-        count+" Data has been fetched and saved to the EmailTrendFact Table."
+        count + " Data has been fetched and saved to the EmailTrendFact Table."
       );
-      logToFile(`${count} Data has been fetched and saved to the EmailTrendFact Table.`);
+      logToFile(
+        `${count} Data has been fetched and saved to the EmailTrendFact Table.`
+      );
       count++;
-    // }
-  }
+      // }
+    }
   } catch (error) {
     console.error("Error:", error);
     console.log(`Retrying ${retryCount}`);
@@ -563,17 +554,15 @@ async function getEmailTrendFact(BearerToken,connection,queryName) {
   }
 }
 
-async function getLoyaltyPointsFact(BearerToken,connection,queryName) {
+async function getLoyaltyPointsFact(BearerToken, connection, queryName) {
   const accessToken = BearerToken;
   const apiUrl =
     "https://atreemo.updates.thedrg.co.uk/api/BIDWHouse/GetLoyaltyPointsFact";
-    let retryCount = 5; 
-
+  let retryCount = 5;
 
   try {
-   
     while (retryCount > 0) {
-    // while (true) {
+      // while (true) {
       let data = [];
 
       const response = await axios.get(`${apiUrl}?pageSize=*`, {
@@ -609,7 +598,6 @@ async function getLoyaltyPointsFact(BearerToken,connection,queryName) {
       // Assuming 'data' is an array of objects obtained from the API
       // Save data to MySQL database
       const insertQuery = queries[queryName];
-        
 
       const values = data.map((item) => [
         item.LoyaltyPointsFactID,
@@ -623,17 +611,18 @@ async function getLoyaltyPointsFact(BearerToken,connection,queryName) {
         item.ModifiedDate,
       ]);
 
-       connection.query(insertQuery, [values]);
+      connection.query(insertQuery, [values]);
 
       console.log(
-        count+" Data has been fetched and saved to the LoyaltyPointsFact Table."
+        count +
+          " Data has been fetched and saved to the LoyaltyPointsFact Table."
       );
       logToFile(
         `${count} Data has been fetched and saved to the LoyaltyPointsFact Table.`
       );
       count++;
-    // }
-  }
+      // }
+    }
   } catch (error) {
     console.error("Error:", error);
     console.log(`Retrying ${retryCount}`);
@@ -650,18 +639,15 @@ async function getLoyaltyPointsFact(BearerToken,connection,queryName) {
   }
 }
 
-async function getVisitsFact(BearerToken,connection,queryName) {
+async function getVisitsFact(BearerToken, connection, queryName) {
   const accessToken = BearerToken;
   const apiUrl =
     "https://atreemo.updates.thedrg.co.uk/api/BIDWHouse/GetVisitsFact";
-    let retryCount = 5; 
-
-
+  let retryCount = 5;
 
   try {
-    // await connection.connect();
     while (retryCount > 0) {
-    // while (true) {
+      // while (true) {
       let data = [];
 
       const response = await axios.get(`${apiUrl}?pageSize=*`, {
@@ -680,7 +666,6 @@ async function getVisitsFact(BearerToken,connection,queryName) {
       }
 
       data = data.concat(responseData.VisitsFacts);
-      // console.log("data length :", data.length);
 
       if (data.length === 0) {
         console.log("No more data retrieved from the GetVisitsFact API.");
@@ -691,7 +676,6 @@ async function getVisitsFact(BearerToken,connection,queryName) {
       // Assuming 'data' is an array of objects obtained from the API
       // Save data to MySQL database
       const insertQuery = queries[queryName];
-        
 
       const values = data.map((item) => [
         item.VisitsFactID,
@@ -705,13 +689,17 @@ async function getVisitsFact(BearerToken,connection,queryName) {
         item.ModifiedDate,
       ]);
 
-       connection.query(insertQuery, [values]);
+      connection.query(insertQuery, [values]);
 
-      console.log(count+" Data has been fetched and saved to the VisitsFact Table.");
-      logToFile(`${count} Data has been fetched and saved to the VisitsFact Table.`);
+      console.log(
+        count + " Data has been fetched and saved to the VisitsFact Table."
+      );
+      logToFile(
+        `${count} Data has been fetched and saved to the VisitsFact Table.`
+      );
       count++;
-    // }
-  }
+      // }
+    }
   } catch (error) {
     console.error("Error:", error);
     console.log(`Retrying ${retryCount}`);

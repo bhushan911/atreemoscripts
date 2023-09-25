@@ -1,6 +1,7 @@
 const axios = require("axios");
 const mysql = require("mysql2");
-const queries = require('./queries');
+delete require.cache[require.resolve("./insertqueries.js")];
+const queries = require("./insertqueries.js");
 const { databaseConfig } = require("./config.js");
 const qs = require("querystring");
 const { logToFile } = require("./log.js");
@@ -63,41 +64,57 @@ const getAccessToken = async () => {
   }
 };
 
-
 // Call the functions to fetch and save data from all API endpoints
 async function fetchAndSaveDataFromAllEndpoints() {
   let connection;
   try {
-
-     connection = mysql.createConnection(databaseConfig);
+    connection = mysql.createConnection(databaseConfig);
 
     // Connect to the database
     await connection.promise().connect();
     console.log("DB Connection Open:");
 
-    await getBookingsFact(BearerToken,connection,'insertBookingsFact');
-    await getContactDetailsFact(BearerToken,connection,'insertContactDetailsFact');
-    await getTransactionsFact(BearerToken,connection,'insertTransactionsFact');
-    await getContactPreferencesFact(BearerToken,connection,'insertContactPreferencesFact');
-    await getContactSourcesFact(BearerToken,connection,'insertContactSourcesFact');
-    await getEmailTrendFact(BearerToken,connection,'insertEmailTrendFact');
-    await getLoyaltyPointsFact(BearerToken,connection,'insertLoyaltyPointsFact');
-    await getVisitsFact(BearerToken,connection,'insertVisitsFact');
+    await getBookingsFact(BearerToken, connection, "insertBookingsFact");
+    await getContactDetailsFact(
+      BearerToken,
+      connection,
+      "insertContactDetailsFact"
+    );
+    await getTransactionsFact(
+      BearerToken,
+      connection,
+      "insertTransactionsFact"
+    );
+    await getContactPreferencesFact(
+      BearerToken,
+      connection,
+      "insertContactPreferencesFact"
+    );
+    await getContactSourcesFact(
+      BearerToken,
+      connection,
+      "insertContactSourcesFact"
+    );
+    await getEmailTrendFact(BearerToken, connection, "insertEmailTrendFact");
+    await getLoyaltyPointsFact(
+      BearerToken,
+      connection,
+      "insertLoyaltyPointsFact"
+    );
+    await getVisitsFact(BearerToken, connection, "insertVisitsFact");
 
     // Call other functions for remaining endpoints
     console.log("Data from all API endpoints has been saved to the database.");
     logToFile("Data from all API endpoints has been saved to the database.");
   } catch (error) {
     console.error("Error:", error);
-  } finally{
-    if(connection){
+  } finally {
+    if (connection) {
       connection.end();
       console.log("DB connection closed");
-      logToFile("DB connection closed")
+      logToFile("DB connection closed");
     }
-
   }
- 
 }
 // Call the main function to start fetching and saving data
 
