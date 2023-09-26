@@ -113,7 +113,7 @@ const insertqueries = {
         ModifiedDate = VALUES(ModifiedDate);
     `,
   insertLoyaltyPointsFact: `
-    INSERT INTO atreemo.loyaltypointsfact(LoyaltyPointsFactID,CtcID,OrderUniqueID,SiteID,SiteName,ActionDate,Points,Source,ModifiedDate) VALUES ? 
+    INSERT INTO loyaltypointsfact(LoyaltyPointsFactID,CtcID,OrderUniqueID,SiteID,SiteName,ActionDate,Points,Source,ModifiedDate) VALUES ? 
         ON DUPLICATE KEY UPDATE  
         LoyaltyPointsFactID = VALUES(LoyaltyPointsFactID),  
         CtcID = VALUES(CtcID),  
@@ -138,6 +138,108 @@ const insertqueries = {
         Source = VALUES(Source),  
         ModifiedDate = VALUES(ModifiedDate);
     `,
+  insertPushNotificationsTrendFact: `
+  INSERT INTO pushnotificationtrendfacts(PushNotificationTrendFactID,CtcID,PrjMkgTitle,CategoryID,Category,SendDate,SubmittedBy,SenderProfileID,SenderProfile,BrandName,CostPerItem,ModifiedDate) VALUES ? 
+    ON DUPLICATE KEY UPDATE
+    PushNotificationTrendFactID = VALUES(PushNotificationTrendFactID),
+    CtcID = VALUES(CtcID),
+    PrjMkgTitle = VALUES(PrjMkgTitle),
+    CategoryID = VALUES(CategoryID),
+    Category = VALUES(Category),
+    SendDate = VALUES(SendDate),
+    SubmittedBy = VALUES(SubmittedBy),
+    SenderProfileID = VALUES(SenderProfileID),
+    SenderProfile = VALUES(SenderProfile),
+    BrandName = VALUES(BrandName),
+    CostPerItem = VALUES(CostPerItem),
+    ModifiedDate = VALUES(ModifiedDate);
+    `,
+  insertSMSTrendFact: `
+  INSERT INTO smstrendfacts(SMSTrendFactID,CtcID,PrjMkgTitle,CategoryID,Category,SendDate,SubmittedBy,SenderProfileID,SenderProfile,BrandName,NbUnits,CostPerItem,ModifiedDate) VALUES ?
+    ON DUPLICATE KEY UPDATE
+    SMSTrendFactID = VALUES(SMSTrendFactID),
+    CtcID = VALUES(CtcID),
+    PrjMkgTitle = VALUES(PrjMkgTitle),
+    CategoryID = VALUES(CategoryID),
+    Category = VALUES(Category),
+    SendDate = VALUES(SendDate),
+    SubmittedBy = VALUES(SubmittedBy),
+    SenderProfileID = VALUES(SenderProfileID),
+    SenderProfile = VALUES(SenderProfile),
+    BrandName = VALUES(BrandName),
+    NbUnits = VALUES(NbUnits),
+    CostPerItem = VALUES(CostPerItem),
+    ModifiedDate = VALUES(ModifiedDate);
+    `,
+  insertVouchersFact: `
+  INSERT INTO vouchersfacts(VouchersFactID,CtcID,Title,VoucherCode,OfferID,OfferCode,Disabled,Redeemed,VoucherCreatedDate,VoucherExpiryDate,RedemptionDate,RedemptionLocationID,RedemptionLocation,RedemptionAmount,CategoryID,Category,SubCategoryID,SubCategory,OrderAmount,IssuedDate,ModifiedDate) VALUES ?
+    ON DUPLICATE KEY UPDATE
+    VouchersFactID = VALUES(VouchersFactID),
+    CtcID = VALUES(CtcID),
+    Title = VALUES(Title),
+    VoucherCode = VALUES(VoucherCode),
+    OfferID = VALUES(OfferID),
+    OfferCode = VALUES(OfferCode),
+    Disabled = VALUES(Disabled),
+    Redeemed = VALUES(Redeemed),
+    VoucherCreatedDate = VALUES(VoucherCreatedDate),
+    VoucherExpiryDate = VALUES(VoucherExpiryDate),
+    RedemptionDate = VALUES(RedemptionDate),
+    RedemptionLocationID = VALUES(RedemptionLocationID),
+    RedemptionLocation = VALUES(RedemptionLocation),
+    RedemptionAmount = VALUES(RedemptionAmount),
+    CategoryID = VALUES(CategoryID),
+    Category = VALUES(Category),
+    SubCategoryID = VALUES(SubCategoryID),
+    SubCategory = VALUES(SubCategory),
+    OrderAmount = VALUES(OrderAmount),
+    IssuedDate = VALUES(IssuedDate),
+    ModifiedDate = VALUES(ModifiedDate);
+    `,
+  insertLeadsFact: `
+  INSERT INTO leadsfact (LeadsFactID,LeadID,CtcID,CreateDate,CreatedBy,ClaimedBy,CategoryName,SubCategoryName,Status,IsWalkin,LeadSource,Revenue,PostSaesCallDate,SiteID,SiteName,Region,FollowUpDate,SourceName,Priority,EventDate,EventEndDate,ProvisionalEventDate,ProvisionalEventEndDate,SaleType,EstimatedRevenue,CallMade,ClaimedDate,FirstCallDate,FirstCallMadeBy,FirstCallType,LastCallDate,LastCallMadeBy,LastCallType,AppointmentDate,Brand,MasterID,IsMaster,LastModifiedOn,Deleted,ModifiedDate) VALUES ? 
+  ON DUPLICATE KEY UPDATE
+  LeadsFactID = VALUES(LeadsFactID),
+  LeadID = VALUES(LeadID),
+  CtcID = VALUES(CtcID),
+  CreateDate = VALUES(CreateDate),
+  CreatedBy = VALUES(CreatedBy),
+  ClaimedBy = VALUES(ClaimedBy),
+  CategoryName = VALUES(CategoryName),
+  SubCategoryName = VALUES(SubCategoryName),
+  Status = VALUES(Status),
+  IsWalkin = VALUES(IsWalkin),
+  LeadSource = VALUES(LeadSource),
+  Revenue = VALUES(Revenue),
+  PostSaesCallDate = VALUES(PostSaesCallDate),
+  SiteID = VALUES(SiteID),
+  SiteName = VALUES(SiteName),
+  Region = VALUES(Region),
+  FollowUpDate = VALUES(FollowUpDate),
+  SourceName = VALUES(SourceName),
+  Priority = VALUES(Priority),
+  EventDate = VALUES(EventDate),
+  EventEndDate = VALUES(EventEndDate),
+  ProvisionalEventDate = VALUES(ProvisionalEventDate),
+  ProvisionalEventEndDate = VALUES(ProvisionalEventEndDate),
+  SaleType = VALUES(SaleType),
+  EstimatedRevenue = VALUES(EstimatedRevenue),
+  CallMade = VALUES(CallMade),
+  ClaimedDate = VALUES(ClaimedDate),
+  FirstCallDate = VALUES(FirstCallDate),
+  FirstCallMadeBy = VALUES(FirstCallMadeBy),
+  FirstCallType = VALUES(FirstCallType),
+  LastCallDate = VALUES(LastCallDate),
+  LastCallMadeBy = VALUES(LastCallMadeBy),
+  LastCallType = VALUES(LastCallType),
+  AppointmentDate = VALUES(AppointmentDate),
+  Brand = VALUES(Brand),
+  MasterID = VALUES(MasterID),
+  IsMaster = VALUES(IsMaster),
+  LastModifiedOn = VALUES(LastModifiedOn),
+  Deleted = VALUES(Deleted),
+  ModifiedDate = VALUES(ModifiedDate);
+  `,
 };
 
 module.exports = insertqueries;

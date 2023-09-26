@@ -15,6 +15,10 @@ const {
   getEmailTrendFact,
   getLoyaltyPointsFact,
   getVisitsFact,
+  getPushNotificationsTrendFact,
+  getSMSTrendFact,
+  getVouchersFact,
+  getLeadsFact,
 } = require("./test_script_copy.js");
 const { post } = require("./post.js");
 const { accessTokenConfig } = require("./config.js");
@@ -104,6 +108,14 @@ async function fetchAndSaveDataFromAllEndpoints() {
       "insertLoyaltyPointsFact"
     );
     await getVisitsFact(BearerToken, connection, "insertVisitsFact");
+    // await getPushNotificationsTrendFact(
+    //   BearerToken,
+    //   connection,
+    //   "insertPushNotificationsTrendFact"
+    // );
+    // await getSMSTrendFact(BearerToken, connection, "insertSMSTrendFact");
+    // await getVouchersFact(BearerToken, connection, "insertVouchersFact");
+    // await getLeadsFact(BearerToken, connection, "insertLeadsFact");
 
     // Call other functions for remaining endpoints
     console.log("Data from all API endpoints has been saved to the database.");

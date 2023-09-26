@@ -738,6 +738,389 @@ async function getVisitsFact(BearerToken, connection, queryName) {
     count = 0;
   }
 }
+async function getPushNotificationsTrendFact(
+  BearerToken,
+  connection,
+  queryName
+) {
+  const accessToken = BearerToken;
+  const apiUrl =
+    "https://atreemo.updates.thedrg.co.uk/api/BIDWHouse/GetPushNotificationTrendFact";
+  let retryCount = 5;
+
+  // Configure axios to automatically retry requests on certain HTTP errors
+  axiosRetry(axios, { retries: 5, retryDelay: axiosRetry.exponentialDelay });
+
+  try {
+    while (retryCount > 0) {
+      // while (true) {
+      let data = [];
+
+      const response = await axios.get(`${apiUrl}?pageSize=*`, {
+        headers: {
+          Authorization: `Bearer ${accessToken}`,
+          "Content-Type": "application/json",
+        },
+      });
+
+      const responseData = response.data;
+
+      if (!responseData || !responseData.Response) {
+        console.log(
+          "GetPushNotificationsTrendFact API response does not contain valid data."
+        );
+        logToFile(
+          `GetPushNotificationsTrendFact API response does not contain valid data.`
+        );
+        break; // Exit the loop if the response is not valid
+      }
+
+      data = data.concat(responseData.PushNotificationsTrendFact);
+
+      if (data.length === 0) {
+        console.log(
+          "No more data retrieved from the GetPushNotificationsTrendFact API."
+        );
+        logToFile(
+          `No more data retrieved from the GetPushNotificationsTrendFact API.`
+        );
+        break; // Exit the loop when no more data is retrieved
+      }
+
+      // Assuming 'data' is an array of objects obtained from the API
+      // Save data to MySQL database
+      const insertQuery = queries[queryName];
+
+      const values = data.map((item) => [
+        item.PushNotificationTrendFactID,
+        item.CtcID,
+        item.PrjMkgTitle,
+        item.CategoryID,
+        item.Category,
+        item.SendDate,
+        item.SubmittedBy,
+        item.SenderProfileID,
+        item.SenderProfile,
+        item.BrandName,
+        item.CostPerItem,
+        item.ModifiedDate,
+      ]);
+
+      connection.query(insertQuery, [values]);
+
+      console.log(
+        count +
+          " Data has been fetched and saved to the PushNotificationsTrendFact Table."
+      );
+      logToFile(
+        `${count} Data has been fetched and saved to the PushNotificationsTrendFact Table.`
+      );
+      count++;
+      // }
+    }
+  } catch (error) {
+    console.error("Error:", error);
+    console.log(`Retrying ${retryCount}`);
+    logToFile(`Retrying ${retryCount}`);
+    retryCount--;
+    if (retryCount === 0) {
+      throw error; // If retries exhausted, throw the error
+    }
+    // Sleep for a while before retrying (optional)
+    await new Promise((resolve) => setTimeout(resolve, 20000)); // 20 seconds
+  } finally {
+    // connection.end();
+    count = 0;
+  }
+}
+async function getSMSTrendFact(BearerToken, connection, queryName) {
+  const accessToken = BearerToken;
+  const apiUrl =
+    "https://atreemo.updates.thedrg.co.uk/api/BIDWHouse/GetSMSTrendFact";
+  let retryCount = 5;
+
+  // Configure axios to automatically retry requests on certain HTTP errors
+  axiosRetry(axios, { retries: 5, retryDelay: axiosRetry.exponentialDelay });
+
+  try {
+    while (retryCount > 0) {
+      // while (true) {
+      let data = [];
+
+      const response = await axios.get(`${apiUrl}?pageSize=*`, {
+        headers: {
+          Authorization: `Bearer ${accessToken}`,
+          "Content-Type": "application/json",
+        },
+      });
+
+      const responseData = response.data;
+
+      if (!responseData || !responseData.Response) {
+        console.log(
+          "GetSMSTrendFact API response does not contain valid data."
+        );
+        logToFile(`GetSMSTrendFact API response does not contain valid data.`);
+        break; // Exit the loop if the response is not valid
+      }
+
+      data = data.concat(responseData.SMSTrendFact);
+
+      if (data.length === 0) {
+        console.log("No more data retrieved from the GetSMSTrendFact API.");
+        logToFile(`No more data retrieved from the GetSMSTrendFact API.`);
+        break; // Exit the loop when no more data is retrieved
+      }
+
+      // Assuming 'data' is an array of objects obtained from the API
+      // Save data to MySQL database
+      const insertQuery = queries[queryName];
+
+      const values = data.map((item) => [
+        item.SMSTrendFactID,
+        item.CtcID,
+        item.PrjMkgTitle,
+        item.CategoryID,
+        item.Category,
+        item.SendDate,
+        item.SubmittedBy,
+        item.SenderProfileID,
+        item.SenderProfile,
+        item.BrandName,
+        item.NbUnits,
+        item.CostPerItem,
+        item.ModifiedDate,
+      ]);
+
+      connection.query(insertQuery, [values]);
+
+      console.log(
+        count + " Data has been fetched and saved to the SMSTrendFact Table."
+      );
+      logToFile(
+        `${count} Data has been fetched and saved to the SMSTrendFact Table.`
+      );
+      count++;
+      // }
+    }
+  } catch (error) {
+    console.error("Error:", error);
+    console.log(`Retrying ${retryCount}`);
+    logToFile(`Retrying ${retryCount}`);
+    retryCount--;
+    if (retryCount === 0) {
+      throw error; // If retries exhausted, throw the error
+    }
+    // Sleep for a while before retrying (optional)
+    await new Promise((resolve) => setTimeout(resolve, 20000)); // 20 seconds
+  } finally {
+    // connection.end();
+    count = 0;
+  }
+}
+async function getVouchersFact(BearerToken, connection, queryName) {
+  const accessToken = BearerToken;
+  const apiUrl =
+    "https://atreemo.updates.thedrg.co.uk/api/BIDWHouse/GetVouchersFact";
+  let retryCount = 5;
+
+  // Configure axios to automatically retry requests on certain HTTP errors
+  axiosRetry(axios, { retries: 5, retryDelay: axiosRetry.exponentialDelay });
+
+  try {
+    while (retryCount > 0) {
+      // while (true) {
+      let data = [];
+
+      const response = await axios.get(`${apiUrl}?pageSize=*`, {
+        headers: {
+          Authorization: `Bearer ${accessToken}`,
+          "Content-Type": "application/json",
+        },
+      });
+
+      const responseData = response.data;
+
+      if (!responseData || !responseData.Response) {
+        console.log(
+          "GetVouchersFact API response does not contain valid data."
+        );
+        logToFile(`GetVouchersFact API response does not contain valid data.`);
+        break; // Exit the loop if the response is not valid
+      }
+
+      data = data.concat(responseData.VouchersFact);
+
+      if (data.length === 0) {
+        console.log("No more data retrieved from the GetVouchersFact API.");
+        logToFile(`No more data retrieved from the GetVouchersFact API.`);
+        break; // Exit the loop when no more data is retrieved
+      }
+
+      // Assuming 'data' is an array of objects obtained from the API
+      // Save data to MySQL database
+      const insertQuery = queries[queryName];
+
+      const values = data.map((item) => [
+        item.VouchersFactID,
+        item.CtcID,
+        item.Title,
+        item.VoucherCode,
+        item.OfferID,
+        item.OfferCode,
+        item.Disabled,
+        item.Redeemed,
+        item.VoucherCreatedDate,
+        item.VoucherExpiryDate,
+        item.RedemptionDate,
+        item.RedemptionLocationID,
+        item.RedemptionLocation,
+        item.RedemptionAmount,
+        item.CategoryID,
+        item.Category,
+        item.SubCategoryID,
+        item.SubCategory,
+        item.OrderAmount,
+        item.IssuedDate,
+        item.ModifiedDate,
+      ]);
+
+      connection.query(insertQuery, [values]);
+
+      console.log(
+        count + " Data has been fetched and saved to the VouchersFact Table."
+      );
+      logToFile(
+        `${count} Data has been fetched and saved to the VouchersFact Table.`
+      );
+      count++;
+      // }
+    }
+  } catch (error) {
+    console.error("Error:", error);
+    console.log(`Retrying ${retryCount}`);
+    logToFile(`Retrying ${retryCount}`);
+    retryCount--;
+    if (retryCount === 0) {
+      throw error; // If retries exhausted, throw the error
+    }
+    // Sleep for a while before retrying (optional)
+    await new Promise((resolve) => setTimeout(resolve, 20000)); // 20 seconds
+  } finally {
+    // connection.end();
+    count = 0;
+  }
+}
+async function getLeadsFact(BearerToken, connection, queryName) {
+  const accessToken = BearerToken;
+  const apiUrl =
+    "https://atreemo.updates.thedrg.co.uk/api/BIDWHouse/GetSLPFact";
+  let retryCount = 5;
+
+  // Configure axios to automatically retry requests on certain HTTP errors
+  axiosRetry(axios, { retries: 5, retryDelay: axiosRetry.exponentialDelay });
+
+  try {
+    while (retryCount > 0) {
+      // while (true) {
+      let data = [];
+
+      const response = await axios.get(`${apiUrl}?pageSize=*`, {
+        headers: {
+          Authorization: `Bearer ${accessToken}`,
+          "Content-Type": "application/json",
+        },
+      });
+
+      const responseData = response.data;
+
+      if (!responseData || !responseData.Response) {
+        console.log("GetLeadsFact API response does not contain valid data.");
+        logToFile(`GetLeadsFact API response does not contain valid data.`);
+        break; // Exit the loop if the response is not valid
+      }
+
+      data = data.concat(responseData.LeadsFacts);
+
+      if (data.length === 0) {
+        console.log("No more data retrieved from the GetLeadsFact API.");
+        logToFile(`No more data retrieved from the GetLeadsFact API.`);
+        break; // Exit the loop when no more data is retrieved
+      }
+
+      // Assuming 'data' is an array of objects obtained from the API
+      // Save data to MySQL database
+      const insertQuery = queries[queryName];
+
+      const values = data.map((item) => [
+        item.LeadsFactID,
+        item.LeadID,
+        item.CtcID,
+        item.CreateDate,
+        item.CreatedBy,
+        item.ClaimedBy,
+        item.CategoryName,
+        item.SubCategoryName,
+        item.Status,
+        item.IsWalkin,
+        item.LeadSource,
+        item.Revenue,
+        item.PostSaesCallDate,
+        item.SiteID,
+        item.SiteName,
+        item.Region,
+        item.FollowUpDate,
+        item.SourceName,
+        item.Priority,
+        item.EventDate,
+        item.EventEndDate,
+        item.ProvisionalEventDate,
+        item.ProvisionalEventEndDate,
+        item.SaleType,
+        item.EstimatedRevenue,
+        item.CallMade,
+        item.ClaimedDate,
+        item.FirstCallDate,
+        item.FirstCallMadeBy,
+        item.FirstCallType,
+        item.LastCallDate,
+        item.LastCallMadeBy,
+        item.LastCallType,
+        item.AppointmentDate,
+        item.Brand,
+        item.MasterID,
+        item.IsMaster,
+        item.LastModifiedOn,
+        item.Deleted,
+        item.ModifiedDate,
+      ]);
+
+      connection.query(insertQuery, [values]);
+
+      console.log(
+        count + " Data has been fetched and saved to the LeadsFact Table."
+      );
+      logToFile(
+        `${count} Data has been fetched and saved to the LeadsFact Table.`
+      );
+      count++;
+      // }
+    }
+  } catch (error) {
+    console.error("Error:", error);
+    console.log(`Retrying ${retryCount}`);
+    logToFile(`Retrying ${retryCount}`);
+    retryCount--;
+    if (retryCount === 0) {
+      throw error; // If retries exhausted, throw the error
+    }
+    // Sleep for a while before retrying (optional)
+    await new Promise((resolve) => setTimeout(resolve, 20000)); // 20 seconds
+  } finally {
+    // connection.end();
+    count = 0;
+  }
+}
 
 module.exports = {
   getBookingsFact,
@@ -748,4 +1131,8 @@ module.exports = {
   getEmailTrendFact,
   getLoyaltyPointsFact,
   getVisitsFact,
+  getPushNotificationsTrendFact,
+  getSMSTrendFact,
+  getVouchersFact,
+  getLeadsFact,
 };
