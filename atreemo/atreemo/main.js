@@ -1,4 +1,5 @@
 const axios = require("axios");
+const axiosRetry = require("axios-retry");
 const mysql = require("mysql2");
 delete require.cache[require.resolve("./insertqueries.js")];
 const queries = require("./insertqueries.js");
@@ -75,6 +76,7 @@ async function fetchAndSaveDataFromAllEndpoints() {
     console.log("DB Connection Open:");
 
     await getBookingsFact(BearerToken, connection, "insertBookingsFact");
+    // Repeat this pattern for other API functions
     await getContactDetailsFact(
       BearerToken,
       connection,

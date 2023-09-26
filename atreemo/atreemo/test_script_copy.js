@@ -5,7 +5,7 @@ const queries = require("./insertqueries.js");
 const { databaseConfig } = require("./config.js");
 const { logToFile } = require("./log.js");
 const { log } = require("console");
-
+const axiosRetry = require("axios-retry");
 let count = 0;
 
 async function getBookingsFact(BearerToken, connection, queryName) {
@@ -13,6 +13,8 @@ async function getBookingsFact(BearerToken, connection, queryName) {
   const apiUrl =
     "https://atreemo.updates.thedrg.co.uk/api/BIDWHouse/GetBookingsFact";
   let retryCount = 5;
+  // Configure axios to automatically retry requests on certain HTTP errors
+  axiosRetry(axios, { retries: 5, retryDelay: axiosRetry.exponentialDelay });
   // const connection = mysql.createConnection(databaseConfig);
 
   try {
@@ -105,6 +107,9 @@ async function getContactDetailsFact(BearerToken, connection, queryName) {
     "https://atreemo.updates.thedrg.co.uk/api/BIDWHouse/GetContactDetailsFact";
   let retryCount = 5;
 
+  // Configure axios to automatically retry requests on certain HTTP errors
+  axiosRetry(axios, { retries: 5, retryDelay: axiosRetry.exponentialDelay });
+
   try {
     while (retryCount > 0) {
       // while (true) {
@@ -195,6 +200,9 @@ async function getTransactionsFact(BearerToken, connection, queryName) {
   const apiUrl =
     "https://atreemo.updates.thedrg.co.uk/api/BIDWHouse/GetTransactionsFact";
   let retryCount = 5;
+
+  // Configure axios to automatically retry requests on certain HTTP errors
+  axiosRetry(axios, { retries: 5, retryDelay: axiosRetry.exponentialDelay });
 
   try {
     while (retryCount > 0) {
@@ -288,6 +296,9 @@ async function getContactPreferencesFact(BearerToken, connection, queryName) {
     "https://atreemo.updates.thedrg.co.uk/api/BIDWHouse/GetContactPreferencesFact";
   let retryCount = 5;
 
+  // Configure axios to automatically retry requests on certain HTTP errors
+  axiosRetry(axios, { retries: 5, retryDelay: axiosRetry.exponentialDelay });
+
   try {
     while (retryCount > 0) {
       // while (true) {
@@ -377,6 +388,9 @@ async function getContactSourcesFact(BearerToken, connection, queryName) {
     "https://atreemo.updates.thedrg.co.uk/api/BIDWHouse/GetContactSourcesFact";
   let retryCount = 5;
 
+  // Configure axios to automatically retry requests on certain HTTP errors
+  axiosRetry(axios, { retries: 5, retryDelay: axiosRetry.exponentialDelay });
+
   try {
     while (retryCount > 0) {
       // while (true) {
@@ -458,6 +472,9 @@ async function getEmailTrendFact(BearerToken, connection, queryName) {
   const apiUrl =
     "https://atreemo.updates.thedrg.co.uk/api/BIDWHouse/GetEmailTrendFact";
   let retryCount = 5;
+
+  // Configure axios to automatically retry requests on certain HTTP errors
+  axiosRetry(axios, { retries: 5, retryDelay: axiosRetry.exponentialDelay });
 
   try {
     while (retryCount > 0) {
@@ -560,6 +577,9 @@ async function getLoyaltyPointsFact(BearerToken, connection, queryName) {
     "https://atreemo.updates.thedrg.co.uk/api/BIDWHouse/GetLoyaltyPointsFact";
   let retryCount = 5;
 
+  // Configure axios to automatically retry requests on certain HTTP errors
+  axiosRetry(axios, { retries: 5, retryDelay: axiosRetry.exponentialDelay });
+
   try {
     while (retryCount > 0) {
       // while (true) {
@@ -644,6 +664,9 @@ async function getVisitsFact(BearerToken, connection, queryName) {
   const apiUrl =
     "https://atreemo.updates.thedrg.co.uk/api/BIDWHouse/GetVisitsFact";
   let retryCount = 5;
+
+  // Configure axios to automatically retry requests on certain HTTP errors
+  axiosRetry(axios, { retries: 5, retryDelay: axiosRetry.exponentialDelay });
 
   try {
     while (retryCount > 0) {
