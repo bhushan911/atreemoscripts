@@ -19,6 +19,9 @@ config.js
 # misc
 .DS_Store
 
+#logfile
+.log
+
 # debug
 npm-debug.log*
 yarn-debug.log*
