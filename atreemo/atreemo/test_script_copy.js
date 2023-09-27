@@ -775,7 +775,7 @@ async function getPushNotificationsTrendFact(
         break; // Exit the loop if the response is not valid
       }
 
-      data = data.concat(responseData.PushNotificationsTrendFact);
+      data = data.concat(responseData.PushNotificationTrendFacts);
 
       if (data.length === 0) {
         console.log(
@@ -864,7 +864,7 @@ async function getSMSTrendFact(BearerToken, connection, queryName) {
         break; // Exit the loop if the response is not valid
       }
 
-      data = data.concat(responseData.SMSTrendFact);
+      data = data.concat(responseData.SMSTrendFacts);
 
       if (data.length === 0) {
         console.log("No more data retrieved from the GetSMSTrendFact API.");
@@ -949,7 +949,7 @@ async function getVouchersFact(BearerToken, connection, queryName) {
         break; // Exit the loop if the response is not valid
       }
 
-      data = data.concat(responseData.VouchersFact);
+      data = data.concat(responseData.VouchersFacts);
 
       if (data.length === 0) {
         console.log("No more data retrieved from the GetVouchersFact API.");

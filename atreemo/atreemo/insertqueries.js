@@ -139,7 +139,7 @@ const insertqueries = {
         ModifiedDate = VALUES(ModifiedDate);
     `,
   insertPushNotificationsTrendFact: `
-  INSERT INTO pushnotificationtrendfacts(PushNotificationTrendFactID,CtcID,PrjMkgTitle,CategoryID,Category,SendDate,SubmittedBy,SenderProfileID,SenderProfile,BrandName,CostPerItem,ModifiedDate) VALUES ? 
+  INSERT INTO pushnotificationtrendfact(PushNotificationTrendFactID,CtcID,PrjMkgTitle,CategoryID,Category,SendDate,SubmittedBy,SenderProfileID,SenderProfile,BrandName,CostPerItem,ModifiedDate) VALUES ? 
     ON DUPLICATE KEY UPDATE
     PushNotificationTrendFactID = VALUES(PushNotificationTrendFactID),
     CtcID = VALUES(CtcID),
@@ -155,7 +155,7 @@ const insertqueries = {
     ModifiedDate = VALUES(ModifiedDate);
     `,
   insertSMSTrendFact: `
-  INSERT INTO smstrendfacts(SMSTrendFactID,CtcID,PrjMkgTitle,CategoryID,Category,SendDate,SubmittedBy,SenderProfileID,SenderProfile,BrandName,NbUnits,CostPerItem,ModifiedDate) VALUES ?
+  INSERT INTO smstrendfact(SMSTrendFactID,CtcID,PrjMkgTitle,CategoryID,Category,SendDate,SubmittedBy,SenderProfileID,SenderProfile,BrandName,NbUnits,CostPerItem,ModifiedDate) VALUES ?
     ON DUPLICATE KEY UPDATE
     SMSTrendFactID = VALUES(SMSTrendFactID),
     CtcID = VALUES(CtcID),
@@ -172,7 +172,7 @@ const insertqueries = {
     ModifiedDate = VALUES(ModifiedDate);
     `,
   insertVouchersFact: `
-  INSERT INTO vouchersfacts(VouchersFactID,CtcID,Title,VoucherCode,OfferID,OfferCode,Disabled,Redeemed,VoucherCreatedDate,VoucherExpiryDate,RedemptionDate,RedemptionLocationID,RedemptionLocation,RedemptionAmount,CategoryID,Category,SubCategoryID,SubCategory,OrderAmount,IssuedDate,ModifiedDate) VALUES ?
+  INSERT INTO vouchersfact(VouchersFactID,CtcID,Title,VoucherCode,OfferID,OfferCode,Disabled,Redeemed,VoucherCreatedDate,VoucherExpiryDate,RedemptionDate,RedemptionLocationID,RedemptionLocation,RedemptionAmount,CategoryID,Category,SubCategoryID,SubCategory,OrderAmount,IssuedDate,ModifiedDate) VALUES ?
     ON DUPLICATE KEY UPDATE
     VouchersFactID = VALUES(VouchersFactID),
     CtcID = VALUES(CtcID),
