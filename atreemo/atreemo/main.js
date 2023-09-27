@@ -19,7 +19,7 @@ const {
   getSMSTrendFact,
   getVouchersFact,
   getLeadsFact,
-} = require("./test_script_copy.js");
+} = require("./api.js");
 const { post } = require("./post.js");
 const { accessTokenConfig } = require("./config.js");
 
