@@ -20,7 +20,7 @@ config.js
 .DS_Store
 
 #logfile
-.log
+*.log
 
 # debug
 npm-debug.log*
