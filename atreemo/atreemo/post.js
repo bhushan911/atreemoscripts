@@ -8,7 +8,7 @@ async function post(BearerToken, tableNames) {
   const apiUrl = "https://atreemo.updates.thedrg.co.uk/api/BIDWHouse/Post";
 
   //Start date for the data to be posted to the API
-  const startDate = "2023-09-01T11:45:37.3794767+01:00";
+  const startDate = "2018-01-01T11:45:37.3794767+01:00";
 
   // Calculate the start date as today's date minus 3 days
   const currentDate = new Date();
@@ -17,7 +17,7 @@ async function post(BearerToken, tableNames) {
 
   console.log(`All Tables Start date: ${startDate}`);
   logToFile(`All Tables Start date: ${startDate}`);
-  console.log(` Email Trend Start date: ${emailTrendStartDate}`);
+  console.log(`Email Trend Start date: ${emailTrendStartDate}`);
   logToFile(`Email Trend Start date: ${emailTrendStartDate}`);
 
   // Process each table name one by one

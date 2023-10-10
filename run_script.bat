@@ -1,2 +1,2 @@
-cd C:\Users\bhush\OneDrive\Desktop\DRG\repository\atreemoscripts\atreemo\atreemo
+cd C:\Atreemo\github\atreemoscripts\atreemo\atreemo
 node main.js
