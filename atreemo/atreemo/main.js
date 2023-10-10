@@ -27,17 +27,17 @@ let BearerToken = null;
 
 const tableNames = [
   // "BookingsFact",
-  // "ContactDetailsFact",
+  "ContactDetailsFact",
   // "TransactionsFact",
   // "ContactPreferencesFact",
   // "ContactsSourcesFact",
-  // "EmailTrendFact",
+  "EmailTrendFact",
   // "LoyaltyPointsFact",
-  // "VisitsFact",
-    "PushNotificationsTrendFact",
-    "SMSTrendFact",
-    "VouchersFact",
-    "LeadsFact",
+  "VisitsFact",
+  // "PushNotificationsTrendFact",
+  // "SMSTrendFact",
+  // "VouchersFact",
+  // "LeadsFact",
 ];
 
 const getAccessToken = async () => {
@@ -81,11 +81,11 @@ async function fetchAndSaveDataFromAllEndpoints() {
 
     // await getBookingsFact(BearerToken, connection, "insertBookingsFact");
     // // Repeat this pattern for other API functions
-    // await getContactDetailsFact(
-    //   BearerToken,
-    //   connection,
-    //   "insertContactDetailsFact"
-    // );
+    await getContactDetailsFact(
+      BearerToken,
+      connection,
+      "insertContactDetailsFact"
+    );
     // await getTransactionsFact(
     //   BearerToken,
     //   connection,
@@ -101,21 +101,21 @@ async function fetchAndSaveDataFromAllEndpoints() {
     //   connection,
     //   "insertContactSourcesFact"
     // );
-    // await getEmailTrendFact(BearerToken, connection, "insertEmailTrendFact");
-    // await getLoyaltyPointsFact(
-    //   BearerToken,
-    //   connection,
-    //   "insertLoyaltyPointsFact"
-    // );
-    // await getVisitsFact(BearerToken, connection, "insertVisitsFact");
+    await getEmailTrendFact(BearerToken, connection, "insertEmailTrendFact");
+    await getLoyaltyPointsFact(
+      BearerToken,
+      connection,
+      "insertLoyaltyPointsFact"
+    );
+    await getVisitsFact(BearerToken, connection, "insertVisitsFact");
     await getPushNotificationsTrendFact(
       BearerToken,
       connection,
       "insertPushNotificationsTrendFact"
     );
-    await getSMSTrendFact(BearerToken, connection, "insertSMSTrendFact");
-    await getVouchersFact(BearerToken, connection, "insertVouchersFact");
-    await getLeadsFact(BearerToken, connection, "insertLeadsFact");
+    // await getSMSTrendFact(BearerToken, connection, "insertSMSTrendFact");
+    // await getVouchersFact(BearerToken, connection, "insertVouchersFact");
+    // await getLeadsFact(BearerToken, connection, "insertLeadsFact");
 
     // Call other functions for remaining endpoints
     console.log("Data from all API endpoints has been saved to the database.");
